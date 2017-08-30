@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Doc: Source: app-wrapper/js/appWrapper.js</title>
+    <link type="text/css" rel="stylesheet" href="styles/doc.css">
+    <link type="text/css" rel="stylesheet" href="styles/doc-style.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            nw-skeleton
+        </div>
+        <div class="search">
+            <input type="search" name="search">
+        </div>
+    </header>
+    <div id="menu">
+        <nav><div class="menu-section-title"><a href="index.html">Home</a></div><div class="menu-section-title">Namespaces</div><ul><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.html">appWrapper</a><ul><li class="parent"><div class="menu-arrow"></div>Class<ul><li><a href="appWrapper.AppWrapper.html">AppWrapper</a></li><li><a href="appWrapper.App.html">App</a></li><li><a href="appWrapper.AppConfig.html">AppConfig</a></li><li><a href="appWrapper.FileManager.html">FileManager</a></li><li><a href="appWrapper.AppTranslations.html">AppTranslations</a></li><li><a href="appWrapper.AppBaseClass.html">AppBaseClass</a></li><li><a href="appWrapper.BaseClass.html">BaseClass</a></li><li><a href="appWrapper.WindowManager.html">WindowManager</a></li></ul></li><li class="parent"><div class="menu-arrow"></div>Member<ul><li><a href="appWrapper.html#.appWrapperConfig">appWrapperConfig</a></li><li><a href="appWrapper.html#.appState-wrapper">appState-wrapper</a></li></ul></li><li class="parent"><div class="menu-arrow"></div>Namespace<ul><li><a href="appWrapper.helpers.html">helpers</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.html">helpers</a><ul><li class="parent"><div class="menu-arrow"></div>Class<ul><li><a href="appWrapper.helpers.AppOperationHelper.html">AppOperationHelper</a></li><li><a href="appWrapper.helpers.ComponentHelper.html">ComponentHelper</a></li><li><a href="appWrapper.helpers.DebugHelper.html">DebugHelper</a></li><li><a href="appWrapper.helpers.FormatHelper.html">FormatHelper</a></li><li><a href="appWrapper.helpers.HtmlHelper.html">HtmlHelper</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html">KeyboardHelper</a></li><li><a href="appWrapper.helpers.ModalHelper.html">ModalHelper</a></li><li><a href="appWrapper.helpers.StyleHelper.html">StyleHelper</a></li></ul></li><li class="parent"><div class="menu-arrow"></div>Namespace<ul><li><a href="appWrapper.helpers.systemHelpers.html">systemHelpers</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.html">systemHelpers</a><ul><li class="parent"><div class="menu-arrow"></div>Class<ul><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html">AppNotificationsHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html">ClipboardHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html">StaticFilesHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html">StorageHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html">ThemeHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html">UserDataHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html">UserMessageHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html">UtilHelper</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="components.html">components</a><ul><li class="parent"><div class="menu-arrow"></div>Member<ul><li><a href="components.html#.form-control-textarea">form-control-textarea</a></li><li><a href="components.html#.app-debug">app-debug</a></li><li><a href="components.html#.app-error">app-error</a></li><li><a href="components.html#.app-footer">app-footer</a></li><li><a href="components.html#.app-header">app-header</a></li><li><a href="components.html#.app-info">app-info</a></li><li><a href="components.html#.app-loader">app-loader</a></li><li><a href="components.html#.app-loader-spinner">app-loader-spinner</a></li><li><a href="components.html#.app-main">app-main</a></li><li><a href="components.html#.app-notifications">app-notifications</a></li><li><a href="components.html#.app-performance-bar">app-performance-bar</a></li><li><a href="components.html#.app-window">app-window</a></li><li><a href="components.html#.cancel-and-exit">cancel-and-exit</a></li><li><a href="components.html#.checkbox-styled">checkbox-styled</a></li><li><a href="components.html#.config-editor">config-editor</a></li><li><a href="components.html#.debug-config-editor">debug-config-editor</a></li><li><a href="components.html#.empty">empty</a></li><li><a href="components.html#.form-control">form-control</a></li><li><a href="components.html#.form-control-array">form-control-array</a></li><li><a href="components.html#.form-control-checkbox">form-control-checkbox</a></li><li><a href="components.html#.form-control-checkbox-styled">form-control-checkbox-styled</a></li><li><a href="components.html#.form-control-label">form-control-label</a></li><li><a href="components.html#.form-control-object">form-control-object</a></li><li><a href="components.html#.form-control-select">form-control-select</a></li><li><a href="components.html#.form-control-text">form-control-text</a></li><li><a href="components.html#.app-debug-controls">app-debug-controls</a></li><li><a href="components.html#.inspector-json">inspector-json</a></li><li><a href="components.html#.language-editor">language-editor</a></li><li><a href="components.html#.language-select">language-select</a></li><li><a href="components.html#.line-chart">line-chart</a></li><li><a href="components.html#.live-info">live-info</a></li><li><a href="components.html#.log-viewer">log-viewer</a></li><li><a href="components.html#.message-line">message-line</a></li><li><a href="components.html#.message-line-body">message-line-body</a></li><li><a href="components.html#.message-line-table">message-line-table</a></li><li><a href="components.html#.message-list">message-list</a></li><li><a href="components.html#.modal-body">modal-body</a></li><li><a href="components.html#.modal-dialog">modal-dialog</a></li><li><a href="components.html#.modal-dialog-busy">modal-dialog-busy</a></li><li><a href="components.html#.modal-dialog-contents">modal-dialog-contents</a></li><li><a href="components.html#.modal-dialog-messages">modal-dialog-messages</a></li><li><a href="components.html#.progress-bar">progress-bar</a></li><li><a href="components.html#.save-debug">save-debug</a></li><li><a href="components.html#.save-user-messages">save-user-messages</a></li><li><a href="components.html#.theme-select">theme-select</a></li><li><a href="components.html#.translation-editor">translation-editor</a></li><li><a href="components.html#.user-messages">user-messages</a></li><li><a href="components.html#.user-messages-config-editor">user-messages-config-editor</a></li><li><a href="components.html#.user-messages-controls">user-messages-controls</a></li><li><a href="components.html#.window-controls">window-controls</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="directives.html">directives</a><ul><li class="parent"><div class="menu-arrow"></div>Member<ul><li><a href="directives.html#.nw-model">nw-model</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="filters.html">filters</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="filters.html#.Filter">Filter</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.html">mainScript</a><ul><li class="parent"><div class="menu-arrow"></div>Class<ul><li><a href="mainScript.MainAsyncMessageHandlers.html">MainAsyncMessageHandlers</a></li><li><a href="mainScript.MainBaseClass.html">MainBaseClass</a></li><li><a href="mainScript.MainMessageHandlers.html">MainMessageHandlers</a></li><li><a href="mainScript.MainScript.html">MainScript</a></li><li><a href="mainScript.MenuHelper.html">MenuHelper</a></li><li><a href="mainScript.MessageHandlersBase.html">MessageHandlersBase</a></li></ul></li><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.html#.main">main</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mixins.html">mixins</a><ul><li class="parent"><div class="menu-arrow"></div>Member<ul><li><a href="mixins.html#.base-component">base-component</a></li><li><a href="mixins.html#.MixinWrapperMethods">MixinWrapperMethods</a></li><li><a href="mixins.html#.translate">translate</a></li></ul></li></ul></li></ul><div class="menu-section-title">Classes</div><ul><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.App.html">App</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.App.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.App.html#_doLog">_doLog</a></li><li><a href="appWrapper.App.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.App.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.App.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.App.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.App.html#addNotification">addNotification</a></li><li><a href="appWrapper.App.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.App.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.App.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.App.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.App.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.App.html#destroy">destroy</a></li><li><a href="appWrapper.App.html#finalize">finalize</a></li><li><a href="appWrapper.App.html#finalizeSubFiles">finalizeSubFiles</a></li><li><a href="appWrapper.App.html#getAppState">getAppState</a></li><li><a href="appWrapper.App.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.App.html#getConfig">getConfig</a></li><li><a href="appWrapper.App.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.App.html#getHelper">getHelper</a></li><li><a href="appWrapper.App.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.App.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.App.html#_getStack">_getStack</a></li><li><a href="appWrapper.App.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.App.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.App.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.App.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.App.html#initialize">initialize</a></li><li><a href="appWrapper.App.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.App.html#initializeSubFiles">initializeSubFiles</a></li><li><a href="appWrapper.App.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.App.html#loadSubFiles">loadSubFiles</a></li><li><a href="appWrapper.App.html#localRequire">localRequire</a></li><li><a href="appWrapper.App.html#log">log</a></li><li><a href="appWrapper.App.html#message">message</a></li><li><a href="appWrapper.App.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.App.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.App.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.App.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.App.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.App.html#setAppError">setAppError</a></li><li><a href="appWrapper.App.html#shutdown">shutdown</a></li><li><a href="appWrapper.App.html#shutdownSubFiles">shutdownSubFiles</a></li><li><a href="appWrapper.App.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.AppBaseClass.html">AppBaseClass</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.AppBaseClass.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.AppBaseClass.html#_doLog">_doLog</a></li><li><a href="appWrapper.AppBaseClass.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.AppBaseClass.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.AppBaseClass.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.AppBaseClass.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.AppBaseClass.html#addNotification">addNotification</a></li><li><a href="appWrapper.AppBaseClass.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.AppBaseClass.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.AppBaseClass.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.AppBaseClass.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.AppBaseClass.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.AppBaseClass.html#destroy">destroy</a></li><li><a href="appWrapper.AppBaseClass.html#finalize">finalize</a></li><li><a href="appWrapper.AppBaseClass.html#getAppState">getAppState</a></li><li><a href="appWrapper.AppBaseClass.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.AppBaseClass.html#getConfig">getConfig</a></li><li><a href="appWrapper.AppBaseClass.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.AppBaseClass.html#getHelper">getHelper</a></li><li><a href="appWrapper.AppBaseClass.html#_getStack">_getStack</a></li><li><a href="appWrapper.AppBaseClass.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.AppBaseClass.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.AppBaseClass.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.AppBaseClass.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.AppBaseClass.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.AppBaseClass.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.AppBaseClass.html#initialize">initialize</a></li><li><a href="appWrapper.AppBaseClass.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.AppBaseClass.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.AppBaseClass.html#log">log</a></li><li><a href="appWrapper.AppBaseClass.html#message">message</a></li><li><a href="appWrapper.AppBaseClass.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.AppBaseClass.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.AppBaseClass.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.AppBaseClass.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.AppBaseClass.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.AppBaseClass.html#setAppError">setAppError</a></li><li><a href="appWrapper.AppBaseClass.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.AppConfig.html">AppConfig</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.AppConfig.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.AppConfig.html#_doLog">_doLog</a></li><li><a href="appWrapper.AppConfig.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.AppConfig.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.AppConfig.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.AppConfig.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.AppConfig.html#addNotification">addNotification</a></li><li><a href="appWrapper.AppConfig.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.AppConfig.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.AppConfig.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.AppConfig.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.AppConfig.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.AppConfig.html#clearUserConfig">clearUserConfig</a></li><li><a href="appWrapper.AppConfig.html#clearUserConfigHandler">clearUserConfigHandler</a></li><li><a href="appWrapper.AppConfig.html#configChanged">configChanged</a></li><li><a href="appWrapper.AppConfig.html#destroy">destroy</a></li><li><a href="appWrapper.AppConfig.html#finalize">finalize</a></li><li><a href="appWrapper.AppConfig.html#getAppState">getAppState</a></li><li><a href="appWrapper.AppConfig.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.AppConfig.html#getConfig">getConfig</a></li><li><a href="appWrapper.AppConfig.html#getConfigStorageName">getConfigStorageName</a></li><li><a href="appWrapper.AppConfig.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.AppConfig.html#getHelper">getHelper</a></li><li><a href="appWrapper.AppConfig.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.AppConfig.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.AppConfig.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.AppConfig.html#_getStack">_getStack</a></li><li><a href="appWrapper.AppConfig.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.AppConfig.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.AppConfig.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.AppConfig.html#hasConfigVar">hasConfigVar</a></li><li><a href="appWrapper.AppConfig.html#initialize">initialize</a></li><li><a href="appWrapper.AppConfig.html#initializeConfig">initializeConfig</a></li><li><a href="appWrapper.AppConfig.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.AppConfig.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.AppConfig.html#loadUserConfig">loadUserConfig</a></li><li><a href="appWrapper.AppConfig.html#log">log</a></li><li><a href="appWrapper.AppConfig.html#message">message</a></li><li><a href="appWrapper.AppConfig.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.AppConfig.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.AppConfig.html#openConfigEditor">openConfigEditor</a></li><li><a href="appWrapper.AppConfig.html#openConfigEditorHandler">openConfigEditorHandler</a></li><li><a href="appWrapper.AppConfig.html#prepareConfigEditorData">prepareConfigEditorData</a></li><li><a href="appWrapper.AppConfig.html#prepareConfigEditorDataItem">prepareConfigEditorDataItem</a></li><li><a href="appWrapper.AppConfig.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.AppConfig.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.AppConfig.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.AppConfig.html#saveConfig">saveConfig</a></li><li><a href="appWrapper.AppConfig.html#saveUserConfig">saveUserConfig</a></li><li><a href="appWrapper.AppConfig.html#setAppError">setAppError</a></li><li><a href="appWrapper.AppConfig.html#setConfig">setConfig</a></li><li><a href="appWrapper.AppConfig.html#setConfigVar">setConfigVar</a></li><li><a href="appWrapper.AppConfig.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.AppTranslations.html">AppTranslations</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.AppTranslations.html#getNewLabel">getNewLabel</a></li><li><a href="appWrapper.AppTranslations.html#_doLog">_doLog</a></li><li><a href="appWrapper.AppTranslations.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.AppTranslations.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.AppTranslations.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.AppTranslations.html#addLabel">addLabel</a></li><li><a href="appWrapper.AppTranslations.html#addLabels">addLabels</a></li><li><a href="appWrapper.AppTranslations.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.AppTranslations.html#addNotification">addNotification</a></li><li><a href="appWrapper.AppTranslations.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.AppTranslations.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.AppTranslations.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.AppTranslations.html#autoTrimTranslations">autoTrimTranslations</a></li><li><a href="appWrapper.AppTranslations.html#changeLanguage">changeLanguage</a></li><li><a href="appWrapper.AppTranslations.html#charTransliteration">charTransliteration</a></li><li><a href="appWrapper.AppTranslations.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.AppTranslations.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.AppTranslations.html#destroy">destroy</a></li><li><a href="appWrapper.AppTranslations.html#doChangeLanguage">doChangeLanguage</a></li><li><a href="appWrapper.AppTranslations.html#finalize">finalize</a></li><li><a href="appWrapper.AppTranslations.html#getAppState">getAppState</a></li><li><a href="appWrapper.AppTranslations.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.AppTranslations.html#getConfig">getConfig</a></li><li><a href="appWrapper.AppTranslations.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.AppTranslations.html#getExcessLabels">getExcessLabels</a></li><li><a href="appWrapper.AppTranslations.html#getHelper">getHelper</a></li><li><a href="appWrapper.AppTranslations.html#getLanguageFilePath">getLanguageFilePath</a></li><li><a href="appWrapper.AppTranslations.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.AppTranslations.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.AppTranslations.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.AppTranslations.html#_getStack">_getStack</a></li><li><a href="appWrapper.AppTranslations.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.AppTranslations.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.AppTranslations.html#getTranslationDataString">getTranslationDataString</a></li><li><a href="appWrapper.AppTranslations.html#getTranslationEditorData">getTranslationEditorData</a></li><li><a href="appWrapper.AppTranslations.html#getTransliterateData">getTransliterateData</a></li><li><a href="appWrapper.AppTranslations.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.AppTranslations.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.AppTranslations.html#googleTranslate">googleTranslate</a></li><li><a href="appWrapper.AppTranslations.html#initialize">initialize</a></li><li><a href="appWrapper.AppTranslations.html#initializeLanguage">initializeLanguage</a></li><li><a href="appWrapper.AppTranslations.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.AppTranslations.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.AppTranslations.html#loadTranslations">loadTranslations</a></li><li><a href="appWrapper.AppTranslations.html#loadTranslationsFromDir">loadTranslationsFromDir</a></li><li><a href="appWrapper.AppTranslations.html#log">log</a></li><li><a href="appWrapper.AppTranslations.html#message">message</a></li><li><a href="appWrapper.AppTranslations.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.AppTranslations.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.AppTranslations.html#multiReplace">multiReplace</a></li><li><a href="appWrapper.AppTranslations.html#openLanguageEditor">openLanguageEditor</a></li><li><a href="appWrapper.AppTranslations.html#openTranslationEditor">openTranslationEditor</a></li><li><a href="appWrapper.AppTranslations.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.AppTranslations.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.AppTranslations.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.AppTranslations.html#saveTranslations">saveTranslations</a></li><li><a href="appWrapper.AppTranslations.html#scanAppTranslations">scanAppTranslations</a></li><li><a href="appWrapper.AppTranslations.html#setAppError">setAppError</a></li><li><a href="appWrapper.AppTranslations.html#translate">translate</a></li><li><a href="appWrapper.AppTranslations.html#transliterateText">transliterateText</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.AppWrapper.html">AppWrapper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.AppWrapper.html#getObjMethod">getObjMethod</a></li><li><a href="appWrapper.AppWrapper.html#__cancelModalAction">__cancelModalAction</a></li><li><a href="appWrapper.AppWrapper.html#_cancelModalAction">_cancelModalAction</a></li><li><a href="appWrapper.AppWrapper.html#_confirmModalAction">_confirmModalAction</a></li><li><a href="appWrapper.AppWrapper.html#_doLog">_doLog</a></li><li><a href="appWrapper.AppWrapper.html#_getStack">_getStack</a></li><li><a href="appWrapper.AppWrapper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.AppWrapper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.AppWrapper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.AppWrapper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.AppWrapper.html#addNotification">addNotification</a></li><li><a href="appWrapper.AppWrapper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.AppWrapper.html#addWrapperEventListeners">addWrapperEventListeners</a></li><li><a href="appWrapper.AppWrapper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.AppWrapper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.AppWrapper.html#beforeUnload">beforeUnload</a></li><li><a href="appWrapper.AppWrapper.html#beforeWindowClose">beforeWindowClose</a></li><li><a href="appWrapper.AppWrapper.html#callObjMethod">callObjMethod</a></li><li><a href="appWrapper.AppWrapper.html#callViewHandler">callViewHandler</a></li><li><a href="appWrapper.AppWrapper.html#cancelModalAction">cancelModalAction</a></li><li><a href="appWrapper.AppWrapper.html#changeLanguage">changeLanguage</a></li><li><a href="appWrapper.AppWrapper.html#cleanup">cleanup</a></li><li><a href="appWrapper.AppWrapper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.AppWrapper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.AppWrapper.html#confirmModalAction">confirmModalAction</a></li><li><a href="appWrapper.AppWrapper.html#destroy">destroy</a></li><li><a href="appWrapper.AppWrapper.html#exitApp">exitApp</a></li><li><a href="appWrapper.AppWrapper.html#finalize">finalize</a></li><li><a href="appWrapper.AppWrapper.html#finalizeDebugMessageLog">finalizeDebugMessageLog</a></li><li><a href="appWrapper.AppWrapper.html#finalizeLogs">finalizeLogs</a></li><li><a href="appWrapper.AppWrapper.html#finalizeUserMessageLog">finalizeUserMessageLog</a></li><li><a href="appWrapper.AppWrapper.html#getAppDir">getAppDir</a></li><li><a href="appWrapper.AppWrapper.html#getAppState">getAppState</a></li><li><a href="appWrapper.AppWrapper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.AppWrapper.html#getConfig">getConfig</a></li><li><a href="appWrapper.AppWrapper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.AppWrapper.html#getHelper">getHelper</a></li><li><a href="appWrapper.AppWrapper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.AppWrapper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.AppWrapper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.AppWrapper.html#__confirmModalAction">__confirmModalAction</a></li><li><a href="appWrapper.AppWrapper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.AppWrapper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.AppWrapper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.AppWrapper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.AppWrapper.html#handleMainMessage">handleMainMessage</a></li><li><a href="appWrapper.AppWrapper.html#handleMessageResponse">handleMessageResponse</a></li><li><a href="appWrapper.AppWrapper.html#initialize">initialize</a></li><li><a href="appWrapper.AppWrapper.html#initializeDebugMessageLog">initializeDebugMessageLog</a></li><li><a href="appWrapper.AppWrapper.html#initializeFeApp">initializeFeApp</a></li><li><a href="appWrapper.AppWrapper.html#initializeHelpers">initializeHelpers</a></li><li><a href="appWrapper.AppWrapper.html#initializeLanguage">initializeLanguage</a></li><li><a href="appWrapper.AppWrapper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.AppWrapper.html#initializeUserMessageLog">initializeUserMessageLog</a></li><li><a href="appWrapper.AppWrapper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.AppWrapper.html#loadHelpers">loadHelpers</a></li><li><a href="appWrapper.AppWrapper.html#log">log</a></li><li><a href="appWrapper.AppWrapper.html#mergeDeep">mergeDeep</a></li><li><a href="appWrapper.AppWrapper.html#message">message</a></li><li><a href="appWrapper.AppWrapper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.AppWrapper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.AppWrapper.html#messageResponseLog">messageResponseLog</a></li><li><a href="appWrapper.AppWrapper.html#nextTick">nextTick</a></li><li><a href="appWrapper.AppWrapper.html#onDebugWindowClose">onDebugWindowClose</a></li><li><a href="appWrapper.AppWrapper.html#onDebugWindowUnload">onDebugWindowUnload</a></li><li><a href="appWrapper.AppWrapper.html#onNextTick">onNextTick</a></li><li><a href="appWrapper.AppWrapper.html#onWindowClose">onWindowClose</a></li><li><a href="appWrapper.AppWrapper.html#processCommandParams">processCommandParams</a></li><li><a href="appWrapper.AppWrapper.html#reinitializeFeApp">reinitializeFeApp</a></li><li><a href="appWrapper.AppWrapper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.AppWrapper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.AppWrapper.html#removeWrapperEventListeners">removeWrapperEventListeners</a></li><li><a href="appWrapper.AppWrapper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.AppWrapper.html#resetAppStatus">resetAppStatus</a></li><li><a href="appWrapper.AppWrapper.html#setAppError">setAppError</a></li><li><a href="appWrapper.AppWrapper.html#setAppStatus">setAppStatus</a></li><li><a href="appWrapper.AppWrapper.html#setDynamicAppStateValues">setDynamicAppStateValues</a></li><li><a href="appWrapper.AppWrapper.html#showAppInfo">showAppInfo</a></li><li><a href="appWrapper.AppWrapper.html#shutdownApp">shutdownApp</a></li><li><a href="appWrapper.AppWrapper.html#translate">translate</a></li><li><a href="appWrapper.AppWrapper.html#wait">wait</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.BaseClass.html">BaseClass</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.BaseClass.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.BaseClass.html#_getStack">_getStack</a></li><li><a href="appWrapper.BaseClass.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.BaseClass.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.BaseClass.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.BaseClass.html#destroy">destroy</a></li><li><a href="appWrapper.BaseClass.html#finalize">finalize</a></li><li><a href="appWrapper.BaseClass.html#getAppState">getAppState</a></li><li><a href="appWrapper.BaseClass.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.BaseClass.html#getConfig">getConfig</a></li><li><a href="appWrapper.BaseClass.html#getHelper">getHelper</a></li><li><a href="appWrapper.BaseClass.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.BaseClass.html#initialize">initialize</a></li><li><a href="appWrapper.BaseClass.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.BaseClass.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.BaseClass.html#removeEventListeners">removeEventListeners</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.FileManager.html">FileManager</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.FileManager.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.FileManager.html#_doLog">_doLog</a></li><li><a href="appWrapper.FileManager.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.FileManager.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.FileManager.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.FileManager.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.FileManager.html#addNotification">addNotification</a></li><li><a href="appWrapper.FileManager.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.FileManager.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.FileManager.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.FileManager.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.FileManager.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.FileManager.html#createDirFileRecursive">createDirFileRecursive</a></li><li><a href="appWrapper.FileManager.html#createDirRecursive">createDirRecursive</a></li><li><a href="appWrapper.FileManager.html#deleteFile">deleteFile</a></li><li><a href="appWrapper.FileManager.html#destroy">destroy</a></li><li><a href="appWrapper.FileManager.html#fileExists">fileExists</a></li><li><a href="appWrapper.FileManager.html#finalize">finalize</a></li><li><a href="appWrapper.FileManager.html#getAppRoot">getAppRoot</a></li><li><a href="appWrapper.FileManager.html#getAppState">getAppState</a></li><li><a href="appWrapper.FileManager.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.FileManager.html#getConfig">getConfig</a></li><li><a href="appWrapper.FileManager.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.FileManager.html#getFirstFileFromDirs">getFirstFileFromDirs</a></li><li><a href="appWrapper.FileManager.html#getHelper">getHelper</a></li><li><a href="appWrapper.FileManager.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.FileManager.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.FileManager.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.FileManager.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.FileManager.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.FileManager.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.FileManager.html#_getStack">_getStack</a></li><li><a href="appWrapper.FileManager.html#initialize">initialize</a></li><li><a href="appWrapper.FileManager.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.FileManager.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.FileManager.html#isDir">isDir</a></li><li><a href="appWrapper.FileManager.html#isDirWritable">isDirWritable</a></li><li><a href="appWrapper.FileManager.html#isFile">isFile</a></li><li><a href="appWrapper.FileManager.html#isFileWritable">isFileWritable</a></li><li><a href="appWrapper.FileManager.html#loadFile">loadFile</a></li><li><a href="appWrapper.FileManager.html#loadFileFromDirs">loadFileFromDirs</a></li><li><a href="appWrapper.FileManager.html#loadFilesFromDir">loadFilesFromDir</a></li><li><a href="appWrapper.FileManager.html#log">log</a></li><li><a href="appWrapper.FileManager.html#message">message</a></li><li><a href="appWrapper.FileManager.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.FileManager.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.FileManager.html#readDir">readDir</a></li><li><a href="appWrapper.FileManager.html#readDirRecursive">readDirRecursive</a></li><li><a href="appWrapper.FileManager.html#readFileSync">readFileSync</a></li><li><a href="appWrapper.FileManager.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.FileManager.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.FileManager.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.FileManager.html#setAppError">setAppError</a></li><li><a href="appWrapper.FileManager.html#shutdown">shutdown</a></li><li><a href="appWrapper.FileManager.html#translate">translate</a></li><li><a href="appWrapper.FileManager.html#unwatch">unwatch</a></li><li><a href="appWrapper.FileManager.html#unwatchAll">unwatchAll</a></li><li><a href="appWrapper.FileManager.html#unwatchAllFiles">unwatchAllFiles</a></li><li><a href="appWrapper.FileManager.html#unWatchFile">unWatchFile</a></li><li><a href="appWrapper.FileManager.html#watch">watch</a></li><li><a href="appWrapper.FileManager.html#watchFile">watchFile</a></li><li><a href="appWrapper.FileManager.html#writeFileSync">writeFileSync</a></li><li><a href="appWrapper.FileManager.html#zipFiles">zipFiles</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.AppOperationHelper.html">AppOperationHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.AppOperationHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#calculateTime">calculateTime</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#calculateTimeOld">calculateTimeOld</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#cancelAndClose">cancelAndClose</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#cancelAndExit">cancelAndExit</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#cancelAndReload">cancelAndReload</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#cancelOperationComplete">cancelOperationComplete</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#cancelProgressDone">cancelProgressDone</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#canOperationContinue">canOperationContinue</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#clearProgress">clearProgress</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#isOperationActive">isOperationActive</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#isOperationCancelled">isOperationCancelled</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#isOperationTextActive">isOperationTextActive</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#log">log</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#message">message</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#operationCancel">operationCancel</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#operationFinish">operationFinish</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#operationStart">operationStart</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#operationUpdate">operationUpdate</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#resetOperationData">resetOperationData</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#showCancelModal">showCancelModal</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#startProgress">startProgress</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#stopCancelAndExit">stopCancelAndExit</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.AppOperationHelper.html#updateProgress">updateProgress</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.ComponentHelper.html">ComponentHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.ComponentHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#applyComponentModuleData">applyComponentModuleData</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getComponentMapping">getComponentMapping</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getComponentModuleData">getComponentModuleData</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initDirectives">initDirectives</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initFilters">initFilters</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initializeComponent">initializeComponent</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initializeComponents">initializeComponents</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#initMixins">initMixins</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#loadComponentTemplate">loadComponentTemplate</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#loadDirComponents">loadDirComponents</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#loadDirectives">loadDirectives</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#loadMixins">loadMixins</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#log">log</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#message">message</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#prepareComponent">prepareComponent</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#prepareComponentArray">prepareComponentArray</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#processComponents">processComponents</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.ComponentHelper.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.DebugHelper.html">DebugHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.DebugHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.DebugHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.DebugHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.DebugHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.DebugHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.DebugHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.DebugHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.DebugHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.DebugHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.DebugHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.DebugHelper.html#changeDebugLevel">changeDebugLevel</a></li><li><a href="appWrapper.helpers.DebugHelper.html#changeUserMessageLevel">changeUserMessageLevel</a></li><li><a href="appWrapper.helpers.DebugHelper.html#clearDebugMessages">clearDebugMessages</a></li><li><a href="appWrapper.helpers.DebugHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.DebugHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.DebugHelper.html#clearUserMessages">clearUserMessages</a></li><li><a href="appWrapper.helpers.DebugHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.DebugHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getDebugMessageStacksCount">getDebugMessageStacksCount</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getDebugMessageStacksState">getDebugMessageStacksState</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.DebugHelper.html#getUsageData">getUsageData</a></li><li><a href="appWrapper.helpers.DebugHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.DebugHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.DebugHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.DebugHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.DebugHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.DebugHelper.html#log">log</a></li><li><a href="appWrapper.helpers.DebugHelper.html#message">message</a></li><li><a href="appWrapper.helpers.DebugHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.DebugHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.DebugHelper.html#openDebugConfigEditor">openDebugConfigEditor</a></li><li><a href="appWrapper.helpers.DebugHelper.html#openDebugWindow">openDebugWindow</a></li><li><a href="appWrapper.helpers.DebugHelper.html#prepareDebugWindow">prepareDebugWindow</a></li><li><a href="appWrapper.helpers.DebugHelper.html#refreshUsageData">refreshUsageData</a></li><li><a href="appWrapper.helpers.DebugHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.DebugHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.DebugHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.DebugHelper.html#saveDebug">saveDebug</a></li><li><a href="appWrapper.helpers.DebugHelper.html#saveDebugConfig">saveDebugConfig</a></li><li><a href="appWrapper.helpers.DebugHelper.html#saveDebugFileChange">saveDebugFileChange</a></li><li><a href="appWrapper.helpers.DebugHelper.html#saveDebugFileClick">saveDebugFileClick</a></li><li><a href="appWrapper.helpers.DebugHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.DebugHelper.html#showSaveDebugModal">showSaveDebugModal</a></li><li><a href="appWrapper.helpers.DebugHelper.html#startUsageMonitor">startUsageMonitor</a></li><li><a href="appWrapper.helpers.DebugHelper.html#stopUsageMonitor">stopUsageMonitor</a></li><li><a href="appWrapper.helpers.DebugHelper.html#toggleDebug">toggleDebug</a></li><li><a href="appWrapper.helpers.DebugHelper.html#toggleDebugMessages">toggleDebugMessages</a></li><li><a href="appWrapper.helpers.DebugHelper.html#toggleDebugMessageStacks">toggleDebugMessageStacks</a></li><li><a href="appWrapper.helpers.DebugHelper.html#toggleUsageData">toggleUsageData</a></li><li><a href="appWrapper.helpers.DebugHelper.html#toggleUsageGraphs">toggleUsageGraphs</a></li><li><a href="appWrapper.helpers.DebugHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.DebugHelper.html#usageIntervalChange">usageIntervalChange</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.FormatHelper.html">FormatHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.FormatHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.FormatHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.FormatHelper.html#addZeros">addZeros</a></li><li><a href="appWrapper.helpers.FormatHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.FormatHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.FormatHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.FormatHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.FormatHelper.html#decToHex">decToHex</a></li><li><a href="appWrapper.helpers.FormatHelper.html#decToHexColor">decToHexColor</a></li><li><a href="appWrapper.helpers.FormatHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.FormatHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.FormatHelper.html#forceSpacing">forceSpacing</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatCurrency">formatCurrency</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatDate">formatDate</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatDateNormalize">formatDateNormalize</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatDuration">formatDuration</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatDurationCustom">formatDurationCustom</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatFileSize">formatFileSize</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatTime">formatTime</a></li><li><a href="appWrapper.helpers.FormatHelper.html#formatTimeNormalize">formatTimeNormalize</a></li><li><a href="appWrapper.helpers.FormatHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.FormatHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.FormatHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.FormatHelper.html#hexToDec">hexToDec</a></li><li><a href="appWrapper.helpers.FormatHelper.html#hexToDecColor">hexToDecColor</a></li><li><a href="appWrapper.helpers.FormatHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.FormatHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.FormatHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.FormatHelper.html#log">log</a></li><li><a href="appWrapper.helpers.FormatHelper.html#message">message</a></li><li><a href="appWrapper.helpers.FormatHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.FormatHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.FormatHelper.html#nl2br">nl2br</a></li><li><a href="appWrapper.helpers.FormatHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.FormatHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.FormatHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.FormatHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.FormatHelper.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.HtmlHelper.html">HtmlHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.HtmlHelper.html#getTransitionDuration">getTransitionDuration</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addClass">addClass</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#canPasteText">canPasteText</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#extendElementProto">extendElementProto</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#forceSize">forceSize</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getAbsolutePosition">getAbsolutePosition</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getCloneRealDimensions">getCloneRealDimensions</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getComputedStyle">getComputedStyle</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getComputedStyles">getComputedStyles</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getElementDefaultDisplay">getElementDefaultDisplay</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getElementStyles">getElementStyles</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getInputValue">getInputValue</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getParentByClass">getParentByClass</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getRealDimensions">getRealDimensions</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getUniqueElementIdentifier">getUniqueElementIdentifier</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#hasClass">hasClass</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#hide">hide</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#isTextSelectable">isTextSelectable</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#log">log</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#makeInvisible">makeInvisible</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#makeVisible">makeVisible</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#message">message</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#parentQuerySelector">parentQuerySelector</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#removeClass">removeClass</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#removeElementStyles">removeElementStyles</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#scrollElementStep">scrollElementStep</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#scrollElementTo">scrollElementTo</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#scrollParentToElement">scrollParentToElement</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#selectAll">selectAll</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#setElementStyles">setElementStyles</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#setFixedSize">setFixedSize</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#setInputValue">setInputValue</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#show">show</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#toggle">toggle</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#toggleClass">toggleClass</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#toggleVisibility">toggleVisibility</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#triggerCustomEvent">triggerCustomEvent</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#unforceSize">unforceSize</a></li><li><a href="appWrapper.helpers.HtmlHelper.html#unsetFixedSize">unsetFixedSize</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.KeyboardHelper.html">KeyboardHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.KeyboardHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#checkNoHandlingKeys">checkNoHandlingKeys</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#handleAppKeyDown">handleAppKeyDown</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#handleGlobalKeyDown">handleGlobalKeyDown</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#handleKeyDown">handleKeyDown</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#log">log</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#message">message</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#registerGlobalShortcut">registerGlobalShortcut</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.KeyboardHelper.html#unRegisterGlobalShortcut">unRegisterGlobalShortcut</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.ModalHelper.html">ModalHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.ModalHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.ModalHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.ModalHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.ModalHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.ModalHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.ModalHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.ModalHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.ModalHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.ModalHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.ModalHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.ModalHelper.html#autoCloseModal">autoCloseModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.ModalHelper.html#clearModalMessages">clearModalMessages</a></li><li><a href="appWrapper.helpers.ModalHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.ModalHelper.html#closeCurrentModal">closeCurrentModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#closeCurrentModalDelayed">closeCurrentModalDelayed</a></li><li><a href="appWrapper.helpers.ModalHelper.html#confirm">confirm</a></li><li><a href="appWrapper.helpers.ModalHelper.html#confirmResolve">confirmResolve</a></li><li><a href="appWrapper.helpers.ModalHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.ModalHelper.html#emptyModal">emptyModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getModalObject">getModalObject</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getModalVar">getModalVar</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.ModalHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.ModalHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.ModalHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.ModalHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.ModalHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.ModalHelper.html#inlineConfirm">inlineConfirm</a></li><li><a href="appWrapper.helpers.ModalHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.ModalHelper.html#log">log</a></li><li><a href="appWrapper.helpers.ModalHelper.html#message">message</a></li><li><a href="appWrapper.helpers.ModalHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.ModalHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.ModalHelper.html#modalBusy">modalBusy</a></li><li><a href="appWrapper.helpers.ModalHelper.html#modalNotBusy">modalNotBusy</a></li><li><a href="appWrapper.helpers.ModalHelper.html#modalNotReady">modalNotReady</a></li><li><a href="appWrapper.helpers.ModalHelper.html#modalReady">modalReady</a></li><li><a href="appWrapper.helpers.ModalHelper.html#openCurrentModal">openCurrentModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#openModal">openModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#openSimpleModal">openSimpleModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#queryModal">queryModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#queryReject">queryReject</a></li><li><a href="appWrapper.helpers.ModalHelper.html#queryResolve">queryResolve</a></li><li><a href="appWrapper.helpers.ModalHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.ModalHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.ModalHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.ModalHelper.html#resetCurrentCallbacks">resetCurrentCallbacks</a></li><li><a href="appWrapper.helpers.ModalHelper.html#resetModalActions">resetModalActions</a></li><li><a href="appWrapper.helpers.ModalHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.ModalHelper.html#setModalData">setModalData</a></li><li><a href="appWrapper.helpers.ModalHelper.html#setModalVar">setModalVar</a></li><li><a href="appWrapper.helpers.ModalHelper.html#setModalVars">setModalVars</a></li><li><a href="appWrapper.helpers.ModalHelper.html#stopAutoCloseModal">stopAutoCloseModal</a></li><li><a href="appWrapper.helpers.ModalHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.ModalHelper.html#updateAutoCloseTimer">updateAutoCloseTimer</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.StyleHelper.html">StyleHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.StyleHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.StyleHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.StyleHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.StyleHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.StyleHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.StyleHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.StyleHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.StyleHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.StyleHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.StyleHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.StyleHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.StyleHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.StyleHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.StyleHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getCssVarValue">getCssVarValue</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.StyleHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.StyleHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.StyleHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.StyleHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.StyleHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.StyleHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.StyleHelper.html#log">log</a></li><li><a href="appWrapper.helpers.StyleHelper.html#message">message</a></li><li><a href="appWrapper.helpers.StyleHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.StyleHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.StyleHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.StyleHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.StyleHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.StyleHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.StyleHelper.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html">AppNotificationsHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addChromeNotification">addChromeNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#showChromeNotification">showChromeNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#showDesktopNotification">showDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.systemHelpers.AppNotificationsHelper.html#updateDesktopNotification">updateDesktopNotification</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html">ClipboardHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#copy">copy</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#cut">cut</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#get">get</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getSelected">getSelected</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#paste">paste</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#redo">redo</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#selectAll">selectAll</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#set">set</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.systemHelpers.ClipboardHelper.html#undo">undo</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html">StaticFilesHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addCss">addCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addCssFiles">addCssFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#compileCss">compileCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#compileCssTypeGroup">compileCssTypeGroup</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#cssFileChanged">cssFileChanged</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#detectMissingVariables">detectMissingVariables</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#doReloadCss">doReloadCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#generateCss">generateCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getCssFileData">getCssFileData</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getCssFiles">getCssFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#loadCss">loadCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#loadCssFiles">loadCssFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#loadJs">loadJs</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#loadJsFiles">loadJsFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#loadJsTypeGroup">loadJsTypeGroup</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#rebaseAsset">rebaseAsset</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#refreshCss">refreshCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#refreshCssFiles">refreshCssFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#refreshLinkTags">refreshLinkTags</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#reloadCss">reloadCss</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#removeOldCssTags">removeOldCssTags</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#unwatchFiles">unwatchFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.StaticFilesHelper.html#writeCss">writeCss</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.StorageHelper.html">StorageHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#delete">delete</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#get">get</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#set">set</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.StorageHelper.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html">ThemeHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#changeTheme">changeTheme</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getThemeConfig">getThemeConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getThemeTypeCssFiles">getThemeTypeCssFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getThemeTypeJsFiles">getThemeTypeJsFiles</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#initializeModuleThemes">initializeModuleThemes</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#initializeThemes">initializeThemes</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#initializeTypeThemes">initializeTypeThemes</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#registerTheme">registerTheme</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.ThemeHelper.html#translate">translate</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html">UserDataHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#clearUserData">clearUserData</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getUserDataStorageName">getUserDataStorageName</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#loadUserData">loadUserData</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#saveUserData">saveUserData</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.systemHelpers.UserDataHelper.html#userDataChanged">userDataChanged</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html">UserMessageHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getUserMessageStacksState">getUserMessageStacksState</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#closeUserMessageConfig">closeUserMessageConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#getUserMessageStacksCount">getUserMessageStacksCount</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#openUserMessageConfigEditor">openUserMessageConfigEditor</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#processUserMessageQueue">processUserMessageQueue</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#saveMessages">saveMessages</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#saveUserMessageConfig">saveUserMessageConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#saveUserMessagesFileChange">saveUserMessagesFileChange</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#saveUserMessagesFileClick">saveUserMessagesFileClick</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#showSaveMessagesModal">showSaveMessagesModal</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#toggleUserMessages">toggleUserMessages</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#toggleUserMessagesExpanded">toggleUserMessagesExpanded</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#toggleUserMessageStacks">toggleUserMessageStacks</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#unQueueUserMessage">unQueueUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#userMessageLevelSelectBlur">userMessageLevelSelectBlur</a></li><li><a href="appWrapper.helpers.systemHelpers.UserMessageHelper.html#userMessageLevelSelectFocus">userMessageLevelSelectFocus</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.helpers.systemHelpers.UtilHelper.html">UtilHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#_doLog">_doLog</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#addNotification">addNotification</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#confirmLogViewerModalAction">confirmLogViewerModalAction</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#confirmSaveLogAction">confirmSaveLogAction</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#destroy">destroy</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#difference">difference</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#finalize">finalize</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getAppState">getAppState</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getArrayDuplicates">getArrayDuplicates</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getConfig">getConfig</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getControlObject">getControlObject</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getHelper">getHelper</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getMessageStacksCount">getMessageStacksCount</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getMessageStacksState">getMessageStacksState</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getPlatformData">getPlatformData</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getRandom">getRandom</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getRandomString">getRandomString</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#_getStack">_getStack</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getVar">getVar</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#getVarParent">getVarParent</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#initialize">initialize</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#isLinux">isLinux</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#isMac">isMac</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#isWindows">isWindows</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#loadLogViewerFile">loadLogViewerFile</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#log">log</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#message">message</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#noop">noop</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#openExternalUrl">openExternalUrl</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#pickLogFile">pickLogFile</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#pickLogViewerFile">pickLogViewerFile</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#preloadImageCallback">preloadImageCallback</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#prevent">prevent</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#propertyMap">propertyMap</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#propertyValuesMap">propertyValuesMap</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#quoteRegex">quoteRegex</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#setAppError">setAppError</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#setObjectValuesFromForm">setObjectValuesFromForm</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#setVar">setVar</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#sortObject">sortObject</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#toJson">toJson</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#translate">translate</a></li><li><a href="appWrapper.helpers.systemHelpers.UtilHelper.html#uuid">uuid</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="appWrapper.WindowManager.html">WindowManager</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="appWrapper.WindowManager.html#initialize">initialize</a></li><li><a href="appWrapper.WindowManager.html#_doLog">_doLog</a></li><li><a href="appWrapper.WindowManager.html#addBoundMethods">addBoundMethods</a></li><li><a href="appWrapper.WindowManager.html#addDesktopNotification">addDesktopNotification</a></li><li><a href="appWrapper.WindowManager.html#addEventListeners">addEventListeners</a></li><li><a href="appWrapper.WindowManager.html#addModalMessage">addModalMessage</a></li><li><a href="appWrapper.WindowManager.html#addNotification">addNotification</a></li><li><a href="appWrapper.WindowManager.html#addUserMessage">addUserMessage</a></li><li><a href="appWrapper.WindowManager.html#asyncMessage">asyncMessage</a></li><li><a href="appWrapper.WindowManager.html#asyncMessageInfo">asyncMessageInfo</a></li><li><a href="appWrapper.WindowManager.html#beforeUnload">beforeUnload</a></li><li><a href="appWrapper.WindowManager.html#clearIntervals">clearIntervals</a></li><li><a href="appWrapper.WindowManager.html#clearTimeouts">clearTimeouts</a></li><li><a href="appWrapper.WindowManager.html#closeNewWindow">closeNewWindow</a></li><li><a href="appWrapper.WindowManager.html#closeWindow">closeWindow</a></li><li><a href="appWrapper.WindowManager.html#closeWindowForce">closeWindowForce</a></li><li><a href="appWrapper.WindowManager.html#destroy">destroy</a></li><li><a href="appWrapper.WindowManager.html#dragWindow">dragWindow</a></li><li><a href="appWrapper.WindowManager.html#finalize">finalize</a></li><li><a href="appWrapper.WindowManager.html#focusWindow">focusWindow</a></li><li><a href="appWrapper.WindowManager.html#getAppState">getAppState</a></li><li><a href="appWrapper.WindowManager.html#getAppWrapper">getAppWrapper</a></li><li><a href="appWrapper.WindowManager.html#getConfig">getConfig</a></li><li><a href="appWrapper.WindowManager.html#getDebugMessageFileLine">getDebugMessageFileLine</a></li><li><a href="appWrapper.WindowManager.html#getHelper">getHelper</a></li><li><a href="appWrapper.WindowManager.html#getMessageFileLine">getMessageFileLine</a></li><li><a href="appWrapper.WindowManager.html#getMessageObject">getMessageObject</a></li><li><a href="appWrapper.WindowManager.html#getMessageObjectRow">getMessageObjectRow</a></li><li><a href="appWrapper.WindowManager.html#getStateVar">getStateVar</a></li><li><a href="appWrapper.WindowManager.html#getTableMessageData">getTableMessageData</a></li><li><a href="appWrapper.WindowManager.html#getUserMessageFileLine">getUserMessageFileLine</a></li><li><a href="appWrapper.WindowManager.html#getWinState">getWinState</a></li><li><a href="appWrapper.WindowManager.html#globalEmit">globalEmit</a></li><li><a href="appWrapper.WindowManager.html#hideWindow">hideWindow</a></li><li><a href="appWrapper.WindowManager.html#_getStack">_getStack</a></li><li><a href="appWrapper.WindowManager.html#initializeLogging">initializeLogging</a></li><li><a href="appWrapper.WindowManager.html#initWindow">initWindow</a></li><li><a href="appWrapper.WindowManager.html#initWinState">initWinState</a></li><li><a href="appWrapper.WindowManager.html#isDebugEnabled">isDebugEnabled</a></li><li><a href="appWrapper.WindowManager.html#log">log</a></li><li><a href="appWrapper.WindowManager.html#maximizeWindow">maximizeWindow</a></li><li><a href="appWrapper.WindowManager.html#message">message</a></li><li><a href="appWrapper.WindowManager.html#messageInfo">messageInfo</a></li><li><a href="appWrapper.WindowManager.html#messageInfoOutput">messageInfoOutput</a></li><li><a href="appWrapper.WindowManager.html#minimizeWindow">minimizeWindow</a></li><li><a href="appWrapper.WindowManager.html#mouseMoveHandler">mouseMoveHandler</a></li><li><a href="appWrapper.WindowManager.html#moveWindowMousedown">moveWindowMousedown</a></li><li><a href="appWrapper.WindowManager.html#moveWindowMouseup">moveWindowMouseup</a></li><li><a href="appWrapper.WindowManager.html#openNewWindow">openNewWindow</a></li><li><a href="appWrapper.WindowManager.html#reloadWindow">reloadWindow</a></li><li><a href="appWrapper.WindowManager.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="appWrapper.WindowManager.html#removeEventListeners">removeEventListeners</a></li><li><a href="appWrapper.WindowManager.html#resetAppError">resetAppError</a></li><li><a href="appWrapper.WindowManager.html#restoreWindow">restoreWindow</a></li><li><a href="appWrapper.WindowManager.html#setAppError">setAppError</a></li><li><a href="appWrapper.WindowManager.html#setMenu">setMenu</a></li><li><a href="appWrapper.WindowManager.html#setWinState">setWinState</a></li><li><a href="appWrapper.WindowManager.html#showWindow">showWindow</a></li><li><a href="appWrapper.WindowManager.html#toggleDevTools">toggleDevTools</a></li><li><a href="appWrapper.WindowManager.html#toggleFullScreen">toggleFullScreen</a></li><li><a href="appWrapper.WindowManager.html#toggleMaximize">toggleMaximize</a></li><li><a href="appWrapper.WindowManager.html#translate">translate</a></li><li><a href="appWrapper.WindowManager.html#windowBlur">windowBlur</a></li><li><a href="appWrapper.WindowManager.html#windowFocus">windowFocus</a></li><li><a href="appWrapper.WindowManager.html#windowPositionSizeUpdated">windowPositionSizeUpdated</a></li><li><a href="appWrapper.WindowManager.html#windowResize">windowResize</a></li><li><a href="appWrapper.WindowManager.html#windowRestored">windowRestored</a></li><li><a href="appWrapper.WindowManager.html#winStateChanged">winStateChanged</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.MainAsyncMessageHandlers.html">MainAsyncMessageHandlers</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.MainAsyncMessageHandlers.html#removeAppMenuHandler">removeAppMenuHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#getMethodNames">getMethodNames</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#initializeTrayIconHandler">initializeTrayIconHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#reinitializeAppMenuHandler">reinitializeAppMenuHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#reinitializeTrayIconHandler">reinitializeTrayIconHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#initializeAppMenuHandler">initializeAppMenuHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#removeTrayIconHandler">removeTrayIconHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#setConfigHandler">setConfigHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#setupAppMenuHandler">setupAppMenuHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#testHandler">testHandler</a></li><li><a href="mainScript.MainAsyncMessageHandlers.html#updateMenuItemHandler">updateMenuItemHandler</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.MainBaseClass.html">MainBaseClass</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.MainBaseClass.html#getConfig">getConfig</a></li><li><a href="mainScript.MainBaseClass.html#_doLog">_doLog</a></li><li><a href="mainScript.MainBaseClass.html#addBoundMethods">addBoundMethods</a></li><li><a href="mainScript.MainBaseClass.html#addEventListeners">addEventListeners</a></li><li><a href="mainScript.MainBaseClass.html#clearIntervals">clearIntervals</a></li><li><a href="mainScript.MainBaseClass.html#clearTimeouts">clearTimeouts</a></li><li><a href="mainScript.MainBaseClass.html#consoleLog">consoleLog</a></li><li><a href="mainScript.MainBaseClass.html#createDirFileRecursive">createDirFileRecursive</a></li><li><a href="mainScript.MainBaseClass.html#createDirRecursive">createDirRecursive</a></li><li><a href="mainScript.MainBaseClass.html#destroy">destroy</a></li><li><a href="mainScript.MainBaseClass.html#finalize">finalize</a></li><li><a href="mainScript.MainBaseClass.html#formatTimeNormalize">formatTimeNormalize</a></li><li><a href="mainScript.MainBaseClass.html#getAppState">getAppState</a></li><li><a href="mainScript.MainBaseClass.html#getAppWrapper">getAppWrapper</a></li><li><a href="mainScript.MainBaseClass.html#_getStack">_getStack</a></li><li><a href="mainScript.MainBaseClass.html#getHelper">getHelper</a></li><li><a href="mainScript.MainBaseClass.html#getMainScript">getMainScript</a></li><li><a href="mainScript.MainBaseClass.html#getMainWindow">getMainWindow</a></li><li><a href="mainScript.MainBaseClass.html#getStateVar">getStateVar</a></li><li><a href="mainScript.MainBaseClass.html#initialize">initialize</a></li><li><a href="mainScript.MainBaseClass.html#initializeLogging">initializeLogging</a></li><li><a href="mainScript.MainBaseClass.html#isFile">isFile</a></li><li><a href="mainScript.MainBaseClass.html#log">log</a></li><li><a href="mainScript.MainBaseClass.html#print">print</a></li><li><a href="mainScript.MainBaseClass.html#printLn">printLn</a></li><li><a href="mainScript.MainBaseClass.html#printLog">printLog</a></li><li><a href="mainScript.MainBaseClass.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="mainScript.MainBaseClass.html#removeEventListeners">removeEventListeners</a></li><li><a href="mainScript.MainBaseClass.html#windowLog">windowLog</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.MainMessageHandlers.html">MainMessageHandlers</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.MainMessageHandlers.html#getMethodNames">getMethodNames</a></li><li><a href="mainScript.MainMessageHandlers.html#logHandler">logHandler</a></li><li><a href="mainScript.MainMessageHandlers.html#logMainScriptPropertyHandler">logMainScriptPropertyHandler</a></li><li><a href="mainScript.MainMessageHandlers.html#pingHandler">pingHandler</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.MainScript.html">MainScript</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.MainScript.html#initialize">initialize</a></li><li><a href="mainScript.MainScript.html#_doLog">_doLog</a></li><li><a href="mainScript.MainScript.html#addBoundMethods">addBoundMethods</a></li><li><a href="mainScript.MainScript.html#addEventListeners">addEventListeners</a></li><li><a href="mainScript.MainScript.html#addGlobalEmitterEventListeners">addGlobalEmitterEventListeners</a></li><li><a href="mainScript.MainScript.html#addMainWindowEventListeners">addMainWindowEventListeners</a></li><li><a href="mainScript.MainScript.html#clearIntervals">clearIntervals</a></li><li><a href="mainScript.MainScript.html#clearTimeouts">clearTimeouts</a></li><li><a href="mainScript.MainScript.html#consoleLog">consoleLog</a></li><li><a href="mainScript.MainScript.html#createDirFileRecursive">createDirFileRecursive</a></li><li><a href="mainScript.MainScript.html#createDirRecursive">createDirRecursive</a></li><li><a href="mainScript.MainScript.html#destroy">destroy</a></li><li><a href="mainScript.MainScript.html#finalize">finalize</a></li><li><a href="mainScript.MainScript.html#finalizeDebugMessageLog">finalizeDebugMessageLog</a></li><li><a href="mainScript.MainScript.html#formatTimeNormalize">formatTimeNormalize</a></li><li><a href="mainScript.MainScript.html#getAppState">getAppState</a></li><li><a href="mainScript.MainScript.html#getAppWrapper">getAppWrapper</a></li><li><a href="mainScript.MainScript.html#getConfig">getConfig</a></li><li><a href="mainScript.MainScript.html#getHelper">getHelper</a></li><li><a href="mainScript.MainScript.html#getMainScript">getMainScript</a></li><li><a href="mainScript.MainScript.html#getMainWindow">getMainWindow</a></li><li><a href="mainScript.MainScript.html#getStateVar">getStateVar</a></li><li><a href="mainScript.MainScript.html#_getStack">_getStack</a></li><li><a href="mainScript.MainScript.html#initializeDebugMessageLog">initializeDebugMessageLog</a></li><li><a href="mainScript.MainScript.html#initializeGlobalEmitter">initializeGlobalEmitter</a></li><li><a href="mainScript.MainScript.html#initializeLogging">initializeLogging</a></li><li><a href="mainScript.MainScript.html#isFile">isFile</a></li><li><a href="mainScript.MainScript.html#log">log</a></li><li><a href="mainScript.MainScript.html#onMessage">onMessage</a></li><li><a href="mainScript.MainScript.html#print">print</a></li><li><a href="mainScript.MainScript.html#printLn">printLn</a></li><li><a href="mainScript.MainScript.html#printLog">printLog</a></li><li><a href="mainScript.MainScript.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="mainScript.MainScript.html#removeEventListeners">removeEventListeners</a></li><li><a href="mainScript.MainScript.html#removeGlobalEmitterEventListeners">removeGlobalEmitterEventListeners</a></li><li><a href="mainScript.MainScript.html#removeMainWindowEventListeners">removeMainWindowEventListeners</a></li><li><a href="mainScript.MainScript.html#setNewConfig">setNewConfig</a></li><li><a href="mainScript.MainScript.html#sigInt">sigInt</a></li><li><a href="mainScript.MainScript.html#sigTerm">sigTerm</a></li><li><a href="mainScript.MainScript.html#start">start</a></li><li><a href="mainScript.MainScript.html#uncaughtException">uncaughtException</a></li><li><a href="mainScript.MainScript.html#windowClose">windowClose</a></li><li><a href="mainScript.MainScript.html#windowClosed">windowClosed</a></li><li><a href="mainScript.MainScript.html#windowLoaded">windowLoaded</a></li><li><a href="mainScript.MainScript.html#windowLog">windowLog</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.MenuHelper.html">MenuHelper</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.MenuHelper.html#getTrayMenuItem">getTrayMenuItem</a></li><li><a href="mainScript.MenuHelper.html#_doLog">_doLog</a></li><li><a href="mainScript.MenuHelper.html#addBoundMethods">addBoundMethods</a></li><li><a href="mainScript.MenuHelper.html#addEventListeners">addEventListeners</a></li><li><a href="mainScript.MenuHelper.html#clearIntervals">clearIntervals</a></li><li><a href="mainScript.MenuHelper.html#clearTimeouts">clearTimeouts</a></li><li><a href="mainScript.MenuHelper.html#consoleLog">consoleLog</a></li><li><a href="mainScript.MenuHelper.html#createDirFileRecursive">createDirFileRecursive</a></li><li><a href="mainScript.MenuHelper.html#createDirRecursive">createDirRecursive</a></li><li><a href="mainScript.MenuHelper.html#destroy">destroy</a></li><li><a href="mainScript.MenuHelper.html#finalize">finalize</a></li><li><a href="mainScript.MenuHelper.html#formatTimeNormalize">formatTimeNormalize</a></li><li><a href="mainScript.MenuHelper.html#getAppMenuItem">getAppMenuItem</a></li><li><a href="mainScript.MenuHelper.html#getAppState">getAppState</a></li><li><a href="mainScript.MenuHelper.html#getAppWrapper">getAppWrapper</a></li><li><a href="mainScript.MenuHelper.html#getChainLabelPath">getChainLabelPath</a></li><li><a href="mainScript.MenuHelper.html#getConfig">getConfig</a></li><li><a href="mainScript.MenuHelper.html#getHelper">getHelper</a></li><li><a href="mainScript.MenuHelper.html#getMainScript">getMainScript</a></li><li><a href="mainScript.MenuHelper.html#getMainWindow">getMainWindow</a></li><li><a href="mainScript.MenuHelper.html#getMenuItem">getMenuItem</a></li><li><a href="mainScript.MenuHelper.html#getMenuItemChain">getMenuItemChain</a></li><li><a href="mainScript.MenuHelper.html#getMenuItemLabelPaths">getMenuItemLabelPaths</a></li><li><a href="mainScript.MenuHelper.html#getMenuItemMethodName">getMenuItemMethodName</a></li><li><a href="mainScript.MenuHelper.html#getStateVar">getStateVar</a></li><li><a href="mainScript.MenuHelper.html#_getStack">_getStack</a></li><li><a href="mainScript.MenuHelper.html#handleMenuClick">handleMenuClick</a></li><li><a href="mainScript.MenuHelper.html#handleTrayClick">handleTrayClick</a></li><li><a href="mainScript.MenuHelper.html#initialize">initialize</a></li><li><a href="mainScript.MenuHelper.html#initializeAppMenu">initializeAppMenu</a></li><li><a href="mainScript.MenuHelper.html#initializeAppMenuItem">initializeAppMenuItem</a></li><li><a href="mainScript.MenuHelper.html#initializeAppMenuItemData">initializeAppMenuItemData</a></li><li><a href="mainScript.MenuHelper.html#initializeLogging">initializeLogging</a></li><li><a href="mainScript.MenuHelper.html#initializeTrayIcon">initializeTrayIcon</a></li><li><a href="mainScript.MenuHelper.html#initializeTrayMenuItem">initializeTrayMenuItem</a></li><li><a href="mainScript.MenuHelper.html#isFile">isFile</a></li><li><a href="mainScript.MenuHelper.html#log">log</a></li><li><a href="mainScript.MenuHelper.html#print">print</a></li><li><a href="mainScript.MenuHelper.html#printLn">printLn</a></li><li><a href="mainScript.MenuHelper.html#printLog">printLog</a></li><li><a href="mainScript.MenuHelper.html#reinitializeAppMenu">reinitializeAppMenu</a></li><li><a href="mainScript.MenuHelper.html#reinitializeTrayIcon">reinitializeTrayIcon</a></li><li><a href="mainScript.MenuHelper.html#removeAppMenu">removeAppMenu</a></li><li><a href="mainScript.MenuHelper.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="mainScript.MenuHelper.html#removeEventListeners">removeEventListeners</a></li><li><a href="mainScript.MenuHelper.html#removeTrayIcon">removeTrayIcon</a></li><li><a href="mainScript.MenuHelper.html#setupAppMenu">setupAppMenu</a></li><li><a href="mainScript.MenuHelper.html#updateAppMenuItem">updateAppMenuItem</a></li><li><a href="mainScript.MenuHelper.html#updateTrayMenuItem">updateTrayMenuItem</a></li><li><a href="mainScript.MenuHelper.html#windowLog">windowLog</a></li></ul></li></ul></li><li class="parent"><div class="menu-arrow"></div><a href="mainScript.MessageHandlersBase.html">MessageHandlersBase</a><ul><li class="parent"><div class="menu-arrow"></div>Function<ul><li><a href="mainScript.MessageHandlersBase.html#getMainScript">getMainScript</a></li><li><a href="mainScript.MessageHandlersBase.html#_doLog">_doLog</a></li><li><a href="mainScript.MessageHandlersBase.html#addBoundMethods">addBoundMethods</a></li><li><a href="mainScript.MessageHandlersBase.html#addEventListeners">addEventListeners</a></li><li><a href="mainScript.MessageHandlersBase.html#clearIntervals">clearIntervals</a></li><li><a href="mainScript.MessageHandlersBase.html#clearTimeouts">clearTimeouts</a></li><li><a href="mainScript.MessageHandlersBase.html#consoleLog">consoleLog</a></li><li><a href="mainScript.MessageHandlersBase.html#createDirFileRecursive">createDirFileRecursive</a></li><li><a href="mainScript.MessageHandlersBase.html#createDirRecursive">createDirRecursive</a></li><li><a href="mainScript.MessageHandlersBase.html#destroy">destroy</a></li><li><a href="mainScript.MessageHandlersBase.html#execute">execute</a></li><li><a href="mainScript.MessageHandlersBase.html#finalize">finalize</a></li><li><a href="mainScript.MessageHandlersBase.html#formatTimeNormalize">formatTimeNormalize</a></li><li><a href="mainScript.MessageHandlersBase.html#getAppState">getAppState</a></li><li><a href="mainScript.MessageHandlersBase.html#getAppWrapper">getAppWrapper</a></li><li><a href="mainScript.MessageHandlersBase.html#getConfig">getConfig</a></li><li><a href="mainScript.MessageHandlersBase.html#getHelper">getHelper</a></li><li><a href="mainScript.MessageHandlersBase.html#_getStack">_getStack</a></li><li><a href="mainScript.MessageHandlersBase.html#getMainWindow">getMainWindow</a></li><li><a href="mainScript.MessageHandlersBase.html#getMethodNames">getMethodNames</a></li><li><a href="mainScript.MessageHandlersBase.html#getResponseData">getResponseData</a></li><li><a href="mainScript.MessageHandlersBase.html#getStateVar">getStateVar</a></li><li><a href="mainScript.MessageHandlersBase.html#infoHandler">infoHandler</a></li><li><a href="mainScript.MessageHandlersBase.html#initialize">initialize</a></li><li><a href="mainScript.MessageHandlersBase.html#initializeLogging">initializeLogging</a></li><li><a href="mainScript.MessageHandlersBase.html#isFile">isFile</a></li><li><a href="mainScript.MessageHandlersBase.html#log">log</a></li><li><a href="mainScript.MessageHandlersBase.html#print">print</a></li><li><a href="mainScript.MessageHandlersBase.html#printLn">printLn</a></li><li><a href="mainScript.MessageHandlersBase.html#printLog">printLog</a></li><li><a href="mainScript.MessageHandlersBase.html#removeBoundMethods">removeBoundMethods</a></li><li><a href="mainScript.MessageHandlersBase.html#removeEventListeners">removeEventListeners</a></li><li><a href="mainScript.MessageHandlersBase.html#respond">respond</a></li><li><a href="mainScript.MessageHandlersBase.html#windowLog">windowLog</a></li></ul></li></ul></li></ul></nav>
+    </div>
+    <div id="content">
+        <h1>Source: app-wrapper/js/appWrapper.js</h1>
+        
+
+
+
+    
+
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+
+        
+
+<pre class="prettyprint source linenums"><code>/**
+ * @fileOverview AppWrapper class file
+ * @author Dino Ivankov &lt;dinoivankov@gmail.com>
+ * @version 1.3.0
+ */
+
+const _ = require('lodash');
+const path = require('path');
+
+var App;
+const AppBaseClass = require('./lib/appBase').AppBaseClass;
+
+var AppTranslations = require('./lib/appTranslations').AppTranslations;
+var WindowManager = require('./lib/windowManager').WindowManager;
+var FileManager = require('./lib/fileManager').FileManager;
+
+var AppConfig = require('./lib/appConfig').AppConfig;
+
+/**
+ * A "wrapper" object for nw-skeleton based apps
+ *
+ * @class
+ * @extends {appWrapper.AppBaseClass}
+ * @memberOf appWrapper
+ *
+ * @property {App}              app                 Property that holds reference to App class instance
+ * @property {Object}           helpers             Object that contains helper instances by helper names
+ * @property {WindowManager}    windowManager       Instance of WindowManager class
+ * @property {FileManager}      fileManager         Instance of FileManager class
+ * @property {AppConfig}        appConfig           Instance of AppConfig class
+ * @property {AppTranslations}  appTranslations     Instance of AppTranslations class
+ * @property {window}           debugWindow         Reference to debug window 'window' object (for main app window)
+ * @property {window}           mainWindow          Reference to main window 'window' object (for debug app window)
+ * @property {Object}           initialAppConfig    Object that stores initial app config that wrapper was initialized with
+ * @property {Function}         noop                Reference to empty function (_.noop)
+ */
+class AppWrapper extends AppBaseClass {
+
+    /**
+     * Creates appWrapper instance using initial config object
+     *
+     * @constructor
+     * @param  {Object} initialAppConfig Initial config object
+     * @return {AppWrapper}              Instance of AppWrapper class
+     */
+    constructor (initialAppConfig) {
+        super();
+
+        this.needsConfig = false;
+        this.app = null;
+        this.helpers = {};
+        this.windowManager = null;
+        this.fileManager = null;
+        this.appConfig = null;
+
+        if (initialAppConfig &amp;&amp; initialAppConfig.debug &amp;&amp; initialAppConfig.debug.forceDebug &amp;&amp; !_.isUndefined(initialAppConfig.debug.forceDebug.AppWrapper)){
+            this.forceDebug = initialAppConfig.debug.forceDebug.AppWrapper;
+        }
+
+        if (initialAppConfig &amp;&amp; initialAppConfig.userMessages &amp;&amp; initialAppConfig.userMessages.forceUserMessages &amp;&amp; !_.isUndefined(initialAppConfig.userMessages.forceUserMessages.AppWrapper)){
+            this.forceUserMessages = initialAppConfig.userMessages.forceUserMessages.AppWrapper;
+        }
+
+        this.boundMethods = {
+            cleanup: null,
+            saveUserConfig: null,
+            onWindowClose: null,
+            onDebugWindowClose: null,
+            handleMessageResponse: null,
+            handleMainMessage: null,
+        };
+
+        this.timeouts = {
+            cleanupTimeout: null,
+            windowCloseTimeout: null,
+            modalContentVisibleTimeout: null,
+        };
+
+        this.debugWindow = null;
+        this.mainWindow = null;
+
+        this.initialAppConfig = initialAppConfig;
+
+        window.getAppWrapper = () => {
+            return this;
+        };
+
+        window.getFeApp = () => {
+            return window.feApp;
+        };
+
+        this.noop = _.noop;
+        appState = this.getAppState();
+        this.appTemplate = '';
+        return this;
+    }
+
+    /**
+     * Initializes appWrapper and its dependencies, preparing the wrapper
+     * to start the application itself
+     *
+     * @async
+     * @return {AppWrapper} Instance of AppWrapper class
+     */
+    async initialize(){
+        let isDebugWindow = false;
+        if (this.initialAppConfig.isDebugWindow){
+            isDebugWindow = true;
+            delete this.initialAppConfig.isDebugWindow;
+        }
+
+        this.appConfig = new AppConfig(this.initialAppConfig);
+        await this.appConfig.initialize({silent: true});
+        // appState is available from here;
+
+        await super.initialize();
+
+        if (isDebugWindow){
+            appState.isDebugWindow = true;
+            isDebugWindow = null;
+        }
+
+        this.fileManager = new FileManager();
+        await this.fileManager.initialize();
+
+        appState.config = await this.appConfig.initializeConfig();
+        await this.initializeLogging();
+        await this.appConfig.initializeLogging();
+        await this.fileManager.initializeLogging();
+
+        let tmpDataDir = this.getConfig('appConfig.tmpDataDir');
+        if (tmpDataDir){
+            tmpDataDir = path.resolve(tmpDataDir);
+            await this.fileManager.createDirRecursive(tmpDataDir);
+        }
+
+        this.log('Initializing application wrapper.', 'group', []);
+
+        await this.initializeDebugMessageLog();
+        await this.initializeUserMessageLog();
+
+        appState.config = await this.appConfig.loadUserConfig();
+        await this.initializeLogging();
+        await this.appConfig.initializeLogging();
+        await this.fileManager.initializeLogging();
+
+        this.windowManager = new WindowManager();
+        await this.windowManager.initialize();
+
+        let appFilePath = path.join(process.cwd(), this.getConfig('appConfig.appFile', this.getConfig('wrapper.appFile')));
+
+        App = await this.fileManager.loadFile(appFilePath, true);
+
+        this.app = new App();
+
+        this.helpers = await this.initializeHelpers(this.getConfig('wrapper.systemHelperDirectories'));
+        if (!appState.isDebugWindow) {
+            await this.asyncMessage({instruction: 'setConfig', data: {config: appState.config}});
+        }
+
+        await this.setDynamicAppStateValues();
+
+        if (!appState.isDebugWindow) {
+            await this.asyncMessage({instruction: 'initializeAppMenu', data: {}});
+        }
+
+        await this.helpers.themeHelper.initializeThemes();
+        await this.helpers.staticFilesHelper.loadJsFiles();
+
+        this.helpers = _.merge(this.helpers, await this.initializeHelpers(this.getConfig('wrapper.helperDirectories')));
+
+        try {
+            appState.initializationTime = this.getHelper('format').formatDate(new Date(), {}, true);
+        } catch (ex) {
+            // console.log(ex);
+        }
+
+        appState.userData = await this.getHelper('userData').loadUserData();
+
+        await this.helpers.staticFilesHelper.loadCssFiles();
+
+        let globalKeyHandlers = this.getConfig('appConfig.globalKeyHandlers');
+        if (globalKeyHandlers &amp;&amp; globalKeyHandlers.length){
+            for(let j=0; j&lt;globalKeyHandlers.length; j++){
+                this.getHelper('keyboard').registerGlobalShortcut(globalKeyHandlers[j]);
+            }
+        }
+
+        if (appState.isDebugWindow){
+            this.mainWindow = window.opener;
+        }
+
+        await this.initializeLanguage();
+        if (!appState.appError.title){
+            appState.appError.title = this.translate(appState.appError.defaultTitle);
+        }
+        if (!appState.appError.text){
+            appState.appError.text = this.translate(appState.appError.defaultText);
+        }
+
+        await this.processCommandParams();
+
+        if (!appState.isDebugWindow){
+            await this.asyncMessage({instruction: 'initializeTrayIcon', data: {}});
+        }
+        if (this.getConfig('debug.devTools')){
+            this.windowManager.winState.devTools = true;
+        }
+
+        this.addWrapperEventListeners();
+
+        await this.app.initialize();
+        await this.initializeFeApp();
+
+        if (!appState.isDebugWindow){
+            await this.asyncMessage({instruction: 'setupAppMenu', data: {}});
+        }
+
+        if (this.getConfig('appConfig.showInitializationStatus')){
+            let showInitializationProgress = this.getConfig('appConfig.showInitializationProgress');
+            this.getHelper('appOperation').operationStart(this.appTranslations.translate('Initializing application'), false, true, showInitializationProgress);
+        }
+
+        if (this.getConfig('appConfig.showInitializationStatus')){
+            if (this.getConfig('appConfig.showInitializationProgress')){
+                this.getHelper('appOperation').operationUpdate(100, 100);
+            }
+            this.getHelper('appOperation').operationFinish(this.appTranslations.translate('Application initialized'));
+        }
+
+        return this;
+    }
+
+    /**
+     * Finalizes appWrapper and its dependencies. This method is called once
+     * frontend application is created, so code here has all references that
+     * are available to the application
+     *
+     * @async
+     * @return {booelan} Result of the wrapper and its dependencies finalization
+     */
+    async finalize () {
+        this.windowManager.showWindow();
+        appState.status.appLoaded = true;
+        await this.wait(parseInt(parseFloat(this.getHelper('style').getCssVarValue('--long-animation-duration'), 10) * 1000, 10));
+        let retValue = await this.app.finalize();
+        if (retValue){
+            appState.status.appInitialized = true;
+            appState.status.appReady = true;
+        }
+        window.feApp.$watch('appState.config', this.appConfig.configChanged.bind(this.appConfig), {deep: true});
+        this.log('Initializing application wrapper.', 'groupend', []);
+        if (!appState.isDebugWindow){
+            this.message({instruction: 'log', data: {type: 'debug', message: 'Application initialized', force: false}});
+        }
+        return retValue;
+    }
+
+    /**
+     * Adds event listeners for the AppWrapper instance
+     *
+     * @return {undefined}
+     */
+    addWrapperEventListeners() {
+        if (!appState.isDebugWindow){
+            this.windowManager.win.on('close', this.boundMethods.onWindowClose);
+            this.windowManager.win.globalEmitter.on('messageResponse', this.boundMethods.handleMessageResponse);
+            this.windowManager.win.globalEmitter.on('asyncMessageResponse', this.boundMethods.handleMessageResponse);
+            this.windowManager.win.globalEmitter.on('mainMessage', this.boundMethods.handleMainMessage);
+        } else {
+            this.windowManager.win.on('close', this.boundMethods.onDebugWindowClose);
+        }
+
+    }
+
+    /**
+     * Removes event listeners for the AppWrapper instance
+     *
+     * @return {undefined}
+     */
+    removeWrapperEventListeners() {
+        if (!appState.isDebugWindow){
+            this.windowManager.win.removeListener('close', this.boundMethods.onWindowClose);
+            this.windowManager.win.globalEmitter.removeListener('messageResponse', this.boundMethods.handleMessageResponse);
+            this.windowManager.win.globalEmitter.removeListener('asyncMessageResponse', this.boundMethods.handleMessageResponse);
+            this.windowManager.win.globalEmitter.removeListener('mainMessage', this.boundMethods.handleMainMessage);
+        } else {
+            this.windowManager.win.removeListener('close', this.boundMethods.onDebugWindowClose);
+        }
+
+    }
+
+    /**
+     * Loads language and translation data and initializes language and
+     * translation systems used in the app
+     *
+     * @async
+     * @return {Object} Translation data, containing available languages and translations in those langauges
+     */
+    async initializeLanguage () {
+        this.appTranslations = new AppTranslations();
+        await this.appTranslations.initialize();
+        return await this.appTranslations.initializeLanguage();
+    }
+
+    /**
+     * Loads and initializes helpers from directories passed in argument
+     *
+     * @async
+     * @param  {string[]} helperDirs An array of absolute paths where helper files are located
+     * @return {Object} An object with all initialized helper instances
+     */
+    async initializeHelpers(helperDirs){
+        let helpers = {};
+        let classHelpers = await this.loadHelpers(helperDirs);
+
+        for (let helperIdentifier in classHelpers){
+            helpers[helperIdentifier] = new classHelpers[helperIdentifier]();
+            if (helpers[helperIdentifier] &amp;&amp; !_.isUndefined(helpers[helperIdentifier].initialize) &amp;&amp; _.isFunction(helpers[helperIdentifier].initialize)){
+                await helpers[helperIdentifier].initialize();
+            }
+        }
+
+        return helpers;
+    }
+
+    /**
+     * Loads and helpers from directories passed in argument
+     *
+     * @async
+     * @param  {string[]} helperDirs An array of absolute paths where helper files are located
+     * @return {Object} An object with all helper classes
+     */
+    async loadHelpers (helperDirs) {
+        let helpers = {};
+        if (!(helperDirs &amp;&amp; _.isArray(helperDirs) &amp;&amp; helperDirs.length)){
+            this.log('No wrapper helper dirs defined', 'warning', []);
+            this.log('You should define this in ./config/config.js file under "appConfig.templateDirectories.helperDirectories" variable', 'debug', []);
+            helperDirs = [];
+        } else {
+            this.log('Loading wrapper helpers from {1} directories.', 'group', [helperDirs.length]);
+            let currentHelpers;
+            for (let i=0; i&lt;helperDirs.length; i++){
+                let helperDir = path.resolve(helperDirs[i]);
+                currentHelpers = await this.fileManager.loadFilesFromDir(helperDir, /\.js$/, true);
+                if (currentHelpers &amp;&amp; _.isObject(currentHelpers) &amp;&amp; _.keys(currentHelpers).length){
+                    helpers = _.merge(helpers, currentHelpers);
+                }
+            }
+            this.log('Loading wrapper helpers from {1} directories.', 'groupend', [helperDirs.length]);
+        }
+
+        return helpers;
+    }
+
+    /**
+     * Initializes frontend part of the app, creating Vue instance
+     *
+     * @async
+     * @param {Boolean} noFinalize Flag to prevent finalization (used when reinitializing)
+     * @return {Vue} An object representing Vue app instance
+     */
+    async initializeFeApp(noFinalize){
+        this.log('Initializing Vue app...', 'debug', []);
+        let utilHelper = this.getHelper('util');
+        if (!this.appTemplate){
+            this.appTemplate = document.querySelector('.nw-app-wrapper').innerHTML;
+        } else {
+            document.querySelector('.nw-app-wrapper').innerHTML = this.appTemplate;
+        }
+
+        let returnPromise;
+        let resolveReference;
+        returnPromise = new Promise((resolve) => {
+            resolveReference = resolve;
+        });
+
+        window.feApp = new Vue({
+            el: '.nw-app-wrapper',
+            template: window.indexTemplate,
+            data: appState,
+            mixins: this.helpers.componentHelper.vueMixins,
+            filters: this.helpers.componentHelper.vueFilters,
+            components: this.helpers.componentHelper.vueComponents,
+            translations: appState.translations,
+            mounted: async () => {
+                if (this.getConfig('appConfig.disableRightClick') &amp;&amp; !this.getConfig('debug.enabled')){
+                    document.body.addEventListener('contextmenu', utilHelper.boundMethods.prevent, false);
+                }
+                this.addUserMessage('Application initialized.', 'info', []);
+                if (!noFinalize){
+                    await this.finalize();
+                }
+                if (appState.isDebugWindow){
+                    this.addUserMessage('Debug window application initialized', 'info', [], false,  false);
+                } else {
+                    if (appState.activeConfigFile &amp;&amp; appState.activeConfigFile != '../../config/config.js'){
+                        this.log('Active config file: "{1}"', 'info', [appState.activeConfigFile], true);
+                    }
+                }
+
+                resolveReference(window.feApp);
+            },
+            beforeDestroy: async () => {
+                if (this.getConfig('appConfig.disableRightClick') &amp;&amp; !this.getConfig('debug.enabled')){
+                    document.body.removeEventListener('contextmenu', utilHelper.boundMethods.prevent, false);
+                }
+            },
+            destroyed: async () => {
+                this.emit('feApp:destroyed');
+            }
+        });
+
+        return returnPromise;
+    }
+
+    /**
+     * Reinitializes frontend app by destroying it and initializing it again
+     *
+     * @async
+     * @return {Vue} An object representing Vue app instance
+     */
+    async reinitializeFeApp(){
+        this.once('feApp:destroyed', async () => {
+            window.feApp = null;
+            appState.debugMessages = [];
+            appState.allDebugMessages = [];
+            appState.userMessages = [];
+            appState.allUserMessages = [];
+            await this.wait(appState.config.shortPauseDuration);
+            await this.getHelper('component').initializeComponents();
+            await this.initializeFeApp();
+            this.getHelper('staticFiles').reloadCss();
+        });
+        // appState.status.appLoaded = false;
+        appState.status.appInitialized = false;
+        // appState.status.appReady = false;
+        window.getFeApp().$destroy();
+    }
+
+    /**
+     * Generic frontend event listener for calling methods within app scope (but not within current Vue cmponent scope)
+     *
+     * @async
+     * @param  {Event} e  Event that triggered the handler
+     * @return {undefined}
+     */
+    async callViewHandler (e) {
+        let target = e.target;
+        let eventType = e.type;
+        let eventHandlerName = '';
+        let dataHandlerAttrName = '';
+        let eventTargetAttrName = '';
+        let eventTargetInstruction = '';
+        if (target){
+            eventTargetAttrName = 'data-event-target';
+            do {
+                eventTargetInstruction = target.getAttribute(eventTargetAttrName);
+                if (eventTargetInstruction &amp;&amp; eventTargetInstruction == 'parent'){
+                    target = target.parentNode;
+                }
+            } while (eventTargetInstruction == 'parent');
+
+            dataHandlerAttrName = ['data', eventType, 'handler'].join('-');
+            eventHandlerName = target.getAttribute(dataHandlerAttrName);
+
+            if (!eventHandlerName){
+                do {
+                    target = target.parentNode;
+                    eventHandlerName = target.getAttribute(dataHandlerAttrName);
+                } while (!eventHandlerName);
+            }
+
+            if (eventHandlerName){
+                return await this.callObjMethod(eventHandlerName, [e, target]);
+            } else {
+                this.log('Element {1} doesn\'t have attribute "{2}"', 'warning', [target.tagName + '.' + target.className.split(' ').join(','), dataHandlerAttrName]);
+            }
+        } else {
+            this.log('Can\'t find event target "{1}"', 'warning', [e]);
+            if (e &amp;&amp; e.preventDefault &amp;&amp; _.isFunction(e.preventDefault)){
+                e.preventDefault();
+            }
+        }
+    }
+
+    /**
+     * Handler that performs necessary operations when application window gets closed
+     *
+     * @async
+     * @return {undefined}
+     */
+    async onWindowClose () {
+        let modalHelper = this.getHelper('modal');
+        let appOperationHelper = this.getHelper('appOperation');
+        modalHelper.closeCurrentModal(true);
+        let confirmed = true;
+        if (appState.appOperation.operationActive){
+            appOperationHelper.showCancelModal(false);
+            return;
+        }
+        if (confirmed){
+            appState.status.appShuttingDown = true;
+            await this.cleanup();
+            if (!appState.isDebugWindow){
+                this.resetAppError();
+                await this.asyncMessage({instruction: 'removeAppMenu', data: {}});
+                await this.asyncMessage({instruction: 'removeTrayIcon', data: {}});
+                this.windowManager.closeWindowForce();
+            }
+        } else {
+            return;
+        }
+    }
+
+    /**
+     * Cleanup method - calls cleanup/shutdown methods for all eligible dependencies, cleaning
+     * the app state so it can be safely closed
+     *
+     * @async
+     * @return {boolean} Cleanup result
+     */
+    async cleanup(){
+        let utilHelper = this.getHelper('util');
+        let returnPromise;
+        this.addUserMessage('Performing pre-close cleanup...', 'info', [], false, false);
+        let resolveReference;
+        returnPromise = new Promise((resolve) => {
+            resolveReference = resolve;
+        });
+        setTimeout(async () => {
+            if (this.getConfig('appConfig.disableRightClick') &amp;&amp; !this.getConfig('debug.enabled')){
+                document.body.removeEventListener('contextmenu', utilHelper.boundMethods.prevent);
+            }
+            await this.shutdownApp();
+            await this.finalizeLogs();
+            this.windowManager.hideWindow();
+            if (window &amp;&amp; window.feApp &amp;&amp; window.feApp.$destroy &amp;&amp; _.isFunction(window.feApp.$destroy)){
+                window.feApp.$destroy();
+            }
+            resolveReference(true);
+        }, 200);
+        return returnPromise;
+    }
+
+    /**
+     * Shuts down application, removing menus, tray icons and eventual other functionalities
+     * that were initializes upon application start
+     *
+     * @async
+     * @return {boolean} Shutdown result
+     */
+    async shutdownApp () {
+        this.log('Shutting down...', 'group', []);
+        if (this.debugWindow &amp;&amp; this.debugWindow.getAppWrapper &amp;&amp; _.isFunction(this.debugWindow.getAppWrapper)){
+            this.debugWindow.getAppWrapper().onDebugWindowClose();
+        }
+        appState.mainLoaderTitle = this.appTranslations.translate('Please wait while application shuts down...');
+        appState.status.appShuttingDown = true;
+        this.addUserMessage('Shutting down...', 'info', [], true, false, true, false);
+        if (this.app &amp;&amp; this.app.shutdown &amp;&amp; _.isFunction(this.app.shutdown)){
+            await this.app.shutdown();
+        }
+        this.clearTimeouts();
+        this.clearIntervals();
+        await this.fileManager.unwatchAllFiles();
+        await this.fileManager.unwatchAll();
+        this.addUserMessage('Shutdown complete.', 'info', [], true, false, true, true);
+        this.log('Shutting down...', 'groupend', []);
+        appState.status.appLoaded = false;
+        await this.wait(appState.config.longPauseDuration);
+        return true;
+    }
+
+    /**
+     * Handler that performs necessary operations before application window gets closed
+     *
+     * @return {undefined}
+     */
+    beforeWindowClose () {
+        this.removeWrapperEventListeners();
+        this.removeBoundMethods();
+    }
+
+    /**
+     * Handler for changing current application language
+     *
+     * @param  {string} selectedLanguageName Name of new app language
+     * @param  {Object} selectedLanguage     Object representing new app language
+     * @param  {string} selectedLocale       Locale of new app language
+     * @param  {boolean} skipOtherWindow     Flag that triggers language change in other app windows (if any)
+     * @return {boolean}                     Result of app language change
+     */
+    changeLanguage (selectedLanguageName, selectedLanguage, selectedLocale, skipOtherWindow) {
+        return this.appTranslations.changeLanguage(selectedLanguageName, selectedLanguage, selectedLocale, skipOtherWindow);
+    }
+
+    /**
+     * Handler that is triggered before application window is reloaded (available only with debug enabled)
+     *
+     * @async
+     * @return {undefined}
+     */
+    async beforeUnload () {
+        let modalHelper = this.getHelper('modal');
+        let appOperationHelper = this.getHelper('appOperation');
+        modalHelper.closeCurrentModal(true);
+        let confirmed = true;
+        if (appState.appOperation.operationActive){
+            appOperationHelper.showCancelModal(true);
+            return;
+        }
+        if (confirmed){
+            appState.status.appShuttingDown = true;
+            await this.cleanup();
+            if (!appState.isDebugWindow){
+                this.resetAppError();
+                this.windowManager.reloadWindow(null, true);
+            }
+        } else {
+            return;
+        }
+    }
+
+    /**
+     * Handler that is triggered before application debug window is reloaded (available only with debug enabled)
+     *
+     * @async
+     * @return {undefined}
+     */
+    async onDebugWindowUnload (){
+        this.windowManager.win.removeListener('close', this.boundMethods.onDebugWindowClose);
+    }
+
+    /**
+     * Handler that is triggered before application window is closed (available only with debug enabled)
+     *
+     * @async
+     * @return {undefined}
+     */
+    async onDebugWindowClose (){
+        this.log('Closing standalone debug window', 'info', []);
+        if (this.mainWindow &amp;&amp; this.mainWindow.appState &amp;&amp; this.mainWindow.appState.debugMessages){
+            this.mainWindow.appState.debugMessages = _.cloneDeep(appState.debugMessages);
+            this.mainWindow.appState.allDebugMessages = _.cloneDeep(appState.allDebugMessages);
+            this.mainWindow.appState.hasDebugWindow = false;
+            this.mainWindow.appWrapper.debugWindow = null;
+        }
+        this.windowManager.closeWindowForce();
+        this.addUserMessage('Debug window closed', 'info', [], false,  false);
+    }
+
+    /**
+     * Helper function to set app status variables in app state
+     *
+     * @param {boolean} appBusy  Flag that indicates whether entire app should be considered as 'busy'
+     * @param {string} appStatus String that indicates current app status (for display in app header live info component)
+     * @return {undefined}
+     */
+    setAppStatus (appBusy, appStatus){
+        if (!appStatus){
+            if (appBusy){
+                appStatus = 'busy';
+            } else {
+                appStatus = 'idle';
+            }
+        }
+        appState.status.appBusy = appBusy;
+        appState.status.appStatus = appStatus;
+    }
+
+    /**
+     * Resets app status to not busy/idle state
+     *
+     * @return {undefined}
+     */
+    resetAppStatus (){
+        this.setAppStatus(false);
+    }
+
+    /**
+     * Placeholder method that handles modal confirm action
+     *
+     * @param  {Event} e Optional event passed to method
+     * @return {mixed} Return value depends on particular confirm modal handler method
+     */
+    confirmModalAction (e) {
+        this.log('Calling appWrapper confirmModalAction', 'info', []);
+        return this._confirmModalAction(e);
+    }
+
+    /**
+     * Placeholder method that handles modal cancel/close action
+     *
+     * @param  {Event} e Optional event passed to method
+     * @return {mixed} Return value depends on particular cancel/close modal handler method
+     */
+    cancelModalAction (e) {
+        this.log('Calling appWrapper cancelModalAction', 'info', []);
+        return this._cancelModalAction(e);
+    }
+
+    /**
+     * Internal method that is overwritten when particular modal is opened.
+     * Overwritten method contains all logic for modal confirmation
+     *
+     * @param  {Event} e Optional event passed to method
+     * @return {mixed} Return value depends on particular confirm modal handler method
+     */
+    _confirmModalAction (e) {
+        this.log('Calling appWrapper _confirmModalAction', 'info', []);
+        return this.__confirmModalAction(e);
+    }
+
+    /**
+     * Internal method that is overwritten when particular modal is opened.
+     * Overwritten method contains all logic for modal cancelling or closing
+     *
+     * @param  {Event} e Optional event passed to method
+     * @return {mixed} Return value depends on particular cancel/close modal handler method
+     */
+    _cancelModalAction (e) {
+        this.log('Calling appWrapper _cancelModalAction', 'info', []);
+        return this.__cancelModalAction(e);
+    }
+
+
+    /**
+     * Default confirm modal action - do not change
+     *
+     * @param  {Event} e Optional event passed to method
+     * @return {undefined}
+     */
+    __confirmModalAction (e) {
+        this.log('Calling appWrapper __confirmModalAction', 'info', []);
+        if (e &amp;&amp; e.preventDefault &amp;&amp; _.isFunction(e.preventDefault)){
+            e.preventDefault();
+        }
+        if (!appState.modalData.currentModal.busy){
+            this.getHelper('modal').closeCurrentModal();
+        }
+    }
+
+    /**
+     * Default cancel/close modal action - do not change
+     *
+     * @param  {Event} e Optional event passed to method
+     * @return {undefined}
+     */
+    __cancelModalAction (e) {
+        this.log('Calling appWrapper __cancelModalAction', 'info', []);
+        if (e &amp;&amp; e.preventDefault &amp;&amp; _.isFunction(e.preventDefault)){
+            e.preventDefault();
+        }
+        if (!appState.modalData.currentModal.busy){
+            this.getHelper('modal').closeCurrentModal();
+        }
+    }
+
+    /**
+     * Sets dynamic (calculated) appState values (mainly language related)
+     *
+     * @async
+     * @return {undefined}
+     */
+    async setDynamicAppStateValues () {
+        appState.languageData.currentLanguageName = this.getConfig('currentLanguageName');
+        appState.languageData.currentLanguage = this.getConfig('currentLanguage');
+        appState.languageData.currentLocale = this.getConfig('currentLocale');
+        appState.platformData = this.getHelper('util').getPlatformData();
+        appState.appDir = await this.getAppDir();
+        appState.manifest = require(path.join(appState.appDir, '../package.json'));
+        appState.wrapperManifest = require(path.join(appState.appDir, '../node_modules/nw-skeleton/package.json'));
+        appState.appRootDir = path.join(appState.appDir, '../');
+    }
+
+    /**
+     * Returns instance of helper object based on passed parameter (or false if helper can't be found)
+     *
+     * @param  {string} helperName Name of the helper
+     * @return {Object}            Instance of the helper object (or false if helper can't be found)
+     */
+    getHelper(helperName){
+        let helper = false;
+        if (this.app &amp;&amp; this.app.helpers){
+            helper = _.get(this.app.helpers, helperName);
+            if (!helper){
+                helper = _.get(this.app.helpers, helperName + 'Helper');
+            }
+        }
+        if (!helper){
+            if (this.helpers){
+                helper = _.get(this.helpers, helperName);
+                if (!helper){
+                    helper = _.get(this.helpers, helperName + 'Helper');
+                }
+            }
+        }
+        return helper;
+    }
+
+    /**
+     * Finds and returns method of the object based on passed parameters
+     *
+     * @async
+     * @param  {string} methodString String that represents method path (i.e. 'app.appObject.method')
+     * @param  {array}  methodArgs   An array of arguments to be applied to the returned method reference
+     * @param  {Object} context      Context that will be applied as 'this' to returned method reference
+     * @param  {boolean} silent      Flag to control logging output
+     * @return {Function}            Reference to required method with context and arguments applied (or false if no method is found)
+     */
+    async getObjMethod(methodString, methodArgs, context, silent){
+        let methodChunks = methodString.split('.');
+        let targetMethod;
+        let methodPath = '';
+        let objMethod = false;
+        if (methodChunks &amp;&amp; methodChunks.length &amp;&amp; methodChunks.length > 1){
+            targetMethod = _.takeRight(methodChunks);
+            methodPath = _.slice(methodChunks, 0, methodChunks.length-1).join('.');
+        } else {
+            targetMethod = methodString;
+        }
+
+
+        let handlerObj = this.app;
+        if (methodPath){
+            handlerObj = _.get(handlerObj, methodPath);
+        }
+
+        if (handlerObj &amp;&amp; handlerObj[targetMethod] &amp;&amp; _.isFunction(handlerObj[targetMethod])){
+            if (context &amp;&amp; _.isObject(context)){
+                objMethod = async function() {
+                    return await handlerObj[targetMethod].apply(context, methodArgs);
+                };
+            } else {
+                objMethod = async function() {
+                    return await handlerObj[targetMethod].apply(handlerObj, methodArgs);
+                };
+            }
+        } else {
+            handlerObj = this;
+            if (methodPath){
+                handlerObj = _.get(handlerObj, methodPath);
+            }
+            if (handlerObj &amp;&amp; handlerObj[targetMethod] &amp;&amp; _.isFunction(handlerObj[targetMethod])){
+                if (context &amp;&amp; _.isObject(context)){
+                    objMethod = async function() {
+                        return await handlerObj[targetMethod].apply(context, methodArgs);
+                    };
+                } else {
+                    objMethod = async function() {
+                        return await handlerObj[targetMethod].apply(handlerObj, methodArgs);
+                    };
+                }
+            } else {
+                if (!silent){
+                    this.log('Can\'t find object method "{1}"', 'warning', [methodString]);
+                }
+            }
+        }
+        return objMethod;
+    }
+
+    /**
+     * Finds and calls method of the object based on passed parameters
+     *
+     * @async
+     * @param  {string} methodString String that represents method path (i.e. 'app.appObject.method')
+     * @param  {array}  methodArgs   An array of arguments to be applied to the returned method reference
+     * @param  {Object} context      Context that will be applied as 'this' to returned method reference
+     * @return {mixed}               Method return value or false if no method found
+     */
+    async callObjMethod(methodString, methodArgs, context){
+        let objMethod = await this.getObjMethod(methodString, methodArgs, context);
+        if (objMethod &amp;&amp; _.isFunction(objMethod)){
+            return await objMethod();
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Exits the app, closing app window
+     *
+     * @param {Boolean} force Force window closing
+     * @return {undefined}
+     */
+    exitApp(force){
+        if (force === true){
+            this.windowManager.closeWindowForce();
+        } else {
+            this.windowManager.closeWindow();
+        }
+    }
+
+    /**
+     * Finalizes log files if logging to file is enabled
+     *
+     * @async
+     * @return {boolean} Result of log finalizing
+     */
+    async finalizeLogs(){
+        await this.finalizeUserMessageLog();
+        await this.finalizeDebugMessageLog();
+        return true;
+    }
+
+
+    /**
+     * Initializes user message log file if user message logging to file is enabled
+     *
+     * @async
+     * @return {boolean} Result of log initialization
+     */
+    async initializeUserMessageLog(){
+        if (this.getConfig('userMessages.userMessagesToFile')){
+            if (!await this.fileManager.isFile(this.getConfig('userMessages.userMessagesFilename')) || !this.getConfig('userMessages.userMessagesToFileAppend')) {
+                this.fileManager.createDirFileRecursive(this.getConfig('userMessages.userMessagesFilename'));
+            } else if (this.getConfig('userMessages.userMessagesToFileAppend')) {
+                let messageLogFile = path.resolve(this.getConfig('userMessages.userMessagesFilename'));
+                let messageLogContents = await this.fileManager.readFileSync(messageLogFile);
+                if (messageLogContents){
+                    messageLogContents = messageLogContents.replace(/\n?\[\n/g, '');
+                    messageLogContents = messageLogContents.replace(/\n\],?\n/g, ',');
+                    messageLogContents = messageLogContents.replace(/,+/g, ',');
+                    await this.fileManager.writeFileSync(messageLogFile, messageLogContents, {flag: 'w'});
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Initializes debug log file if debug logging to file is enabled
+     *
+     * @async
+     * @return {boolean} Result of log finalizing
+     */
+    async finalizeUserMessageLog(){
+        if (this.getConfig('userMessages.userMessagesToFile')){
+            let messageLogFile = path.resolve(this.getConfig('userMessages.userMessagesFilename'));
+            let messageLogContents = '[\n' + await this.fileManager.readFileSync(messageLogFile) + '\n]\n';
+            messageLogContents = messageLogContents.replace(/\n,\n/g, '\n');
+            await this.fileManager.writeFileSync(messageLogFile, messageLogContents, {flag: 'w'});
+            // this.log('Finalized user message log...', 'info', []);
+        }
+        return true;
+    }
+
+
+    /**
+     * Initializes debug message log file if debug message logging to file is enabled
+     *
+     * @async
+     * @return {boolean} Result of log initialization
+     */
+    async initializeDebugMessageLog(){
+        if (this.getConfig('debug.debugToFile')){
+            if (!await this.fileManager.isFile(this.getConfig('debug.debugMessagesFilename')) || !this.getConfig('debug.debugToFileAppend')) {
+                this.fileManager.createDirFileRecursive(this.getConfig('debug.debugMessagesFilename'));
+            } else if (this.getConfig('debug.debugToFileAppend')) {
+                let debugLogFile = path.resolve(this.getConfig('debug.debugMessagesFilename'));
+                let debugLogContents = await this.fileManager.readFileSync(debugLogFile);
+                if (debugLogContents){
+                    debugLogContents = debugLogContents.replace(/\n?\[\n/g, '');
+                    debugLogContents = debugLogContents.replace(/\n\],?\n/g, ',');
+                    debugLogContents = debugLogContents.replace(/,+/g, ',');
+                    await this.fileManager.writeFileSync(debugLogFile, debugLogContents, {flag: 'w'});
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Finalizes debug log file if debug logging to file is enabled
+     *
+     * @async
+     * @return {boolean} Result of log finalizing
+     */
+    async finalizeDebugMessageLog(){
+        if (this.getConfig('debug.debugToFile')){
+            let debugLogFile = path.resolve(this.getConfig('debug.debugMessagesFilename'));
+            let debugLogContents = '[\n' + await this.fileManager.readFileSync(debugLogFile) + '\n]\n';
+            debugLogContents = debugLogContents.replace(/\n,\n/g, '\n');
+            await this.fileManager.writeFileSync(debugLogFile, debugLogContents, {flag: 'w'});
+        }
+        return true;
+    }
+
+    /**
+     * Returns appState object if exists, initializing it and returning it if it doesn't
+     *
+     * @return {Object} appState object
+     */
+    getAppState () {
+        let win = nw.Window.get().window;
+        let appStateFile;
+        let appAppState;
+        let initialAppState;
+        if (win &amp;&amp; win.appState){
+            return win.appState;
+        } else {
+            initialAppState = require('./appState').appState;
+            appStateFile = path.resolve('./app/js/appState');
+            try {
+                appAppState = require(appStateFile).appState;
+                initialAppState = this.mergeDeep(initialAppState, appAppState);
+            } catch (ex) {
+                console.error(ex);
+            }
+
+            if (win){
+                win.appState = initialAppState;
+            }
+            return initialAppState;
+        }
+    }
+
+    /**
+     * Helper method for deep object merging
+     *
+     * First passed parameter is destination object, all other parameters are source
+     * objects that will be merged with destination clone.
+     * This method does NOT mutate original object.
+     *
+     * @return {Object} Result destination object with all source object values merged
+     */
+    mergeDeep (){
+        let destination = arguments[0];
+        let sources = Array.prototype.slice.call(arguments, 1);
+        let result = _.cloneDeep(destination);
+
+        for (let i=0; i &lt; sources.length; i++){
+            let source = sources[i];
+            let destinationKeys = _.keys(result);
+            let sourceKeys = _.keys(source);
+            let newKeys = _.difference(sourceKeys, destinationKeys);
+            let oldKeys = _.intersection(sourceKeys, destinationKeys);
+
+            for (let j=0; j&lt;newKeys.length; j++){
+                result[newKeys[j]] = _.cloneDeep(source[newKeys[j]]);
+            }
+
+            for (let j=0; j&lt;oldKeys.length; j++){
+                if (_.isArray(source[oldKeys[j]])){
+                    result[oldKeys[j]] = _.concat(result[oldKeys[j]], source[oldKeys[j]]);
+                } else if (_.isObject(source[oldKeys[j]])){
+                    result[oldKeys[j]] = this.mergeDeep(result[oldKeys[j]], source[oldKeys[j]]);
+                } else if (_.isFunction(source[oldKeys[j]])){
+                    console.log('func');
+                } else {
+                    result[oldKeys[j]] = _.cloneDeep(source[oldKeys[j]]);
+                }
+            }
+
+        }
+        return result;
+    }
+
+    /**
+     * Helper method that stops execution for time determined by passed parameter
+     *
+     * @async
+     * @param  {Integer} duration Pause duration in milliseconds
+     * @return {boolean}      Result of waiting (always true)
+     */
+    async wait(duration){
+        if (this.getConfig('debug.enabled')){
+            this.log('Waiting {1} ms', 'debug', [duration]);
+            let returnPromise = new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(true);
+                }, duration);
+            });
+            return returnPromise;
+        } else {
+            return true;
+        }
+    }
+
+    /**
+     * Helper methods that waits for process.nexTick to happen before allowing
+     * code execution
+     *
+     * @async
+     * @return {boolean} Result of waiting for nextTick (always true)
+     */
+    async nextTick (){
+        let returnPromise = new Promise((resolve) => {
+            setTimeout(() => {
+                resolve(true);
+            }, 0);
+        });
+        return returnPromise;
+    }
+
+    /**
+     * Helper methods that calls function passed in argument upon process.nextTick
+     *
+     * @async
+     * @param  {function} callable Function that will be called after nextTick
+     * @return {mixed}             Value that called function returns
+     */
+    async onNextTick(callable){
+        await this.nextTick();
+        return callable();
+    }
+
+    /**
+     * Determines and returns absolute path to app directory.
+     * Takes into consideration OS platform and way that app is
+     * being run (whether by calling nwjs or running finished packaged app)
+     *
+     * @async
+     * @return {string} Absolute path to app directory
+     */
+    async getAppDir(){
+        let utilHelper = this.getHelper('util');
+        let appDir;
+        let processPath = path.dirname(process.execPath);
+        let workingDir = path.resolve('./');
+
+        if (utilHelper.isWindows()){
+            if (process.execPath.match(/nw\.exe/)){
+                appDir = path.join(workingDir, 'app');
+            } else {
+                appDir = processPath;
+            }
+        } else if (utilHelper.isMac()){
+            if (process.execPath.match(/nwjs\sHelper$/)){
+                appDir = path.join(workingDir, 'app');
+            } else {
+                appDir = processPath;
+            }
+        }
+
+        return appDir;
+    }
+
+    /**
+     * Handles message responses from main script
+     *
+     * @param  {Object} messageData Message response data
+     * @return {undefined}
+     */
+    handleMessageResponse (messageData) {
+        if (messageData){
+            this.messageResponseLog(messageData);
+            let messageIdentifierChunks = [];
+            if (messageData.instruction){
+                messageIdentifierChunks.push(messageData.instruction);
+            }
+            if (messageData.uuid){
+                messageIdentifierChunks.push(messageData.uuid);
+            }
+            let messageType = 'Message ';
+            if (messageData._async_){
+                messageType = 'Async message ';
+            }
+            if (messageData._result_){
+                this.log(messageType + ' "{1}" succeeded', 'info', [messageIdentifierChunks.join(' - ')]);
+            } else {
+                this.log(messageType + ' "{1}" failed', 'error', [messageIdentifierChunks.join(' - ')]);
+            }
+            this.log(messageData, 'debug', []);
+            this.log(messageData, 'debug', []);
+        } else {
+            this.log('Message failed - no message data returned', 'error', []);
+        }
+    }
+
+    /**
+     * Logs eventual user and debug messages and displays eventual notifications from message response
+     *
+     * @param  {Object} messageData Message response data
+     * @return {undefined}
+     */
+    messageResponseLog (messageData) {
+        if (messageData._messages_ &amp;&amp; _.isArray(messageData._messages_)){
+            messageData._messages_.forEach( (message) => {
+                let msgMessage = message.message || '';
+                let msgType = message.type || 'info';
+                let msgData = message.data || [];
+                let msgForce = message.force || false;
+                if (msgMessage){
+                    this.log(msgMessage, msgType, msgData, msgForce);
+                }
+            });
+        }
+        if (messageData._userMessages_ &amp;&amp; _.isArray(messageData._userMessages_)){
+            messageData._userMessages_.forEach( (message) => {
+                let msgMessage = message.message || '';
+                let msgType = message.type || 'info';
+                let msgData = message.data || [];
+                let msgForce = message.force || false;
+                if (msgMessage){
+                    this.addUserMessage(msgMessage, msgType, msgData, false, true, msgForce);
+                }
+            });
+        }
+        if (messageData._notifications_ &amp;&amp; _.isArray(messageData._notifications_)){
+            messageData._notifications_.forEach( (message) => {
+                let msgMessage = message.message || '';
+                let msgType = message.type || 'info';
+                let msgData = message.data || [];
+                if (msgMessage){
+                    this.addNotification(msgMessage, msgType, msgData, true);
+                }
+            });
+        }
+    }
+
+
+    /**
+     * Handles messages from main script
+     *
+     * @param  {Object} data Message data
+     * @return {undefined}
+     */
+    handleMainMessage (data){
+        if (data &amp;&amp; data.instruction){
+            if (data.instruction == 'callMethod' &amp;&amp; data.data &amp;&amp; data.data.method){
+                let args = data.data.arguments;
+                if (!args){
+                    args = [];
+                }
+                this.callObjMethod(data.data.method, args, this);
+            }
+        }
+    }
+
+    /**
+     * Opens app info modal
+     *
+     * @return {undefined}
+     */
+    showAppInfo (){
+        let modalOptions = {
+            title: this.appTranslations.translate('Application info'),
+            confirmButtonText: this.appTranslations.translate('Close'),
+            showCancelButton: false,
+        };
+        this.getHelper('modal').openModal('appInfoModal', modalOptions);
+    }
+
+    /**
+     * Process eventual command line params
+     *
+     * @return {undefined}
+     */
+    async processCommandParams () {
+        if (nw.App.argv &amp;&amp; nw.App.argv.length){
+            if (_.includes(nw.App.argv, 'resetAll')){
+                await this.appConfig.clearUserConfig(true);
+                await this.getHelper('userData').clearUserData();
+                appState.userData = {};
+                this.log('All data reset', 'info', [], true);
+                this.message({instruction:'log', data: {message: 'All data reset', force: true}});
+                this.exitApp(true);
+            } else if (_.includes(nw.App.argv, 'resetData')){
+                await this.getHelper('userData').clearUserData();
+                appState.userData = {};
+                this.log('User data reset', 'info', [], true);
+                this.message({instruction:'log', data: {message: 'User data reset', force: true}});
+                this.exitApp(true);
+            } else if (_.includes(nw.App.argv, 'resetConfig')){
+                await this.appConfig.clearUserConfig(true);
+                this.log('Config data reset', 'info', [], true);
+                this.message({instruction:'log', data: {message: 'Config data reset', force: true}});
+                this.exitApp(true);
+            }
+        }
+    }
+}
+exports.AppWrapper = AppWrapper;
+
+
+
+/**
+ * @namespace
+ * @name mainScript
+ * @description mainScript mainScript namespace
+ */
+
+/**
+ * @namespace
+ * @name appWrapper
+ * @description appWrapper appWrapper namespace
+ */
+
+/**
+ * @namespace
+ * @name appWrapper.helpers
+ * @description appWrapper.helpers appWrapper.helpers namespace
+ */
+
+/**
+ * @namespace
+ * @name appWrapper.helpers.systemHelpers
+ * @description appWrapper.helpers.systemHelpers appWrapper.helpers.systemHelpers namespace
+ */
+
+/**
+ * @namespace
+ * @name components
+ * @description components components namespace
+ */
+
+/**
+ * @namespace
+ * @name directives
+ * @description directives directives namespace
+ */
+
+/**
+ * @namespace
+ * @name filters
+ * @description filters filters namespace
+ */
+
+/**
+ * @namespace
+ * @name mixins
+ * @description mixins mixins namespace
+ */</code></pre>
+
+
+    
+
+
+
+    </div>
+    <footer>
+        Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.3</a>
+    </footer>
+
+    <script type="text/javascript" src="scripts/doc.js"> </script>
+    <script type="text/javascript">
+/* global prettyPrint */
+prettyPrint();
+    </script>
+</body>
+</html>
